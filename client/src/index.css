@@ -1,0 +1,37 @@
+#root.light{
+  --main : #e2e2e2;
+  --text : #1f1f1f;
+}
+
+#root.dark{
+  --main : #1f1f1f;
+  --text : #e2e2e2;
+}
+
+body, html{
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#root{
+  background-color: var(--main);
+  color: var(--text);
+  width: 100vw;
+  height: 100vh;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+button{
+  all : unset;
+  cursor: pointer;
+  padding : 0.5rem 1rem;
+  border-radius: 0.75rem;
+  text-decoration: underline;
+}
+
+button:hover{
+  color: var(--main);
+  background-color: var(--text);
+}

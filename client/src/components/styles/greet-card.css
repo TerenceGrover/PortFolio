@@ -1,0 +1,57 @@
+.greet-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-container {
+  text-align: center;
+  line-height: 2rem;
+}
+
+.get-started {
+  perspective: 750px;
+  transition: transform 0.5s ease, background-color 0.5s ease-in-out;
+}
+
+.get-started:hover {
+  transform: rotateY(20deg) scale(1.1);
+}
+
+.arrow {
+  transition: all 0.3s ease;
+  font-weight: 800;
+}
+
+.active {
+  color: var(--main);
+  background-color: var(--text);
+}
+
+#name{
+  position: relative;
+}
+#name:before {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: 4%;
+  width: 175px;
+  height: 0.4rem;
+  transform: skew(-12deg) translateX(-50%);
+  background: rgba(238, 111, 87, 0.5);
+  z-index: -1;
+}
+
+#photo,
+#code {
+  padding: 5px;
+  border-radius: 5px;
+}
