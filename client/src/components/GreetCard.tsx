@@ -1,19 +1,16 @@
 import { useEffect } from 'react';
 import './styles/greet-card.css'
 import Typewriter from 'typewriter-effect';
-import { useContext } from 'react';
-import { PageContext } from '../contexts/PageContext';
 
-export default function GreetCard(props: { dark: boolean }) {
+export default function GreetCard(props: { dark: boolean, setPage : (page: string) => void }) {
 
   const container = document.getElementsByClassName('text-container')[0] as HTMLElement;
-  const {setPage} = useContext(PageContext);
 
   const handleClick = () => {
     if (props.dark) {
-      setPage('code');
+      props.setPage('code');
     } else {
-      setPage('photo');
+      props.setPage('photo');
     }
   }
 

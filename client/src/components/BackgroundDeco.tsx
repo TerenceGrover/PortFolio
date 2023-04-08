@@ -16,15 +16,17 @@ export default function BackgroundDeco(props : { dark: boolean }) {
           return (
             <div
               key={i}
-              className="deco"
+              id={`deco-${i}`}
+              className="deco floaty"
               style={{
+                position: 'absolute',
                 top: `${rando(80,10)}%`,
                 left: `${rando(80,10)}%`,
-                fontSize: `${rando(3,1)}em`,
-                transform: `rotate(${rando(360)}deg)`
               }}
             >
+              <span style={{ fontSize: `${rando(3,1)}em`, transform: `rotate(${rando(90)}deg)` }}>
               {text}
+              </span>
             </div>
           )
         })

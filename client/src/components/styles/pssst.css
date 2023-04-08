@@ -1,7 +1,7 @@
 .pssst {
   position: absolute;
-  top: 4rem;
-  right: 12rem;
+  top: 5%;
+  right: 10%;
   transform: translate(-50%, -50%);
 }
 
@@ -23,5 +23,5 @@
 }
 
 #second-pssst{
-  top: 1rem;
+  top: 50%;
 }

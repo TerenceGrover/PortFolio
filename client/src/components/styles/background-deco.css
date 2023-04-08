@@ -1,3 +1,65 @@
 .deco{
-  opacity: 0.5;
+  opacity: 0.2;
+}
+
+.deco.floaty{
+  animation: floaty 5s ease-in-out infinite;
+}
+
+#deco-0{
+  animation-delay: 100ms;
+}
+
+#deco-1{
+  animation-delay: 400ms;
+}
+
+#deco-2{
+  animation-delay: 600ms;
+}
+
+#deco-3{
+  animation-delay: 800ms;
+}
+
+#deco-4{
+  animation-delay: 900ms;
+}
+
+#deco-5{
+  animation-delay: 1000ms;
+}
+
+#deco-6{
+  animation-delay: 1200ms;
+}
+
+#deco-7{
+  animation-delay: 1500ms;
+}
+
+#deco-8{
+  animation-delay: 1000ms;
+}
+
+#deco-9{
+  animation-delay: 2000ms;
+}
+
+#deco-10{
+  animation-delay: 500ms;
+}
+
+/* Craft a floating hover ing animation */
+
+@keyframes floaty {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

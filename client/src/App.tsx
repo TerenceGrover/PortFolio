@@ -4,15 +4,26 @@ import GreetCard from './components/GreetCard'
 import Pssst from './components/Pssst'
 import BackgroundDeco from './components/BackgroundDeco'
 import { PageContext } from './contexts/PageContext'
+import CodePage from './pages/CodePage'
+import PhotoPage from './pages/PhotoPage'
+import ToggleDark from './components/ToggleDark'
+import Logo from './components/Logo'
 
 function App() {
-  const [dark, setDark] = useState(true)
+  // Grab user's preferred theme
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  const [dark, setDark] = useState(prefersDark)
   const [pssst, setPssst] = useState(true)
   const [page, setPage] = useState('Home')
 
   const handleClick = () => {
     setDark(!dark)
     setPssst(false)
+    if (page === 'code') {
+      setPage('photo')
+    } else if (page === 'photo') {
+      setPage('code')
+    }
   }
 
   useEffect(() => {
@@ -23,12 +34,22 @@ function App() {
 
   return (
     <div className="App">
-      <button id='toggle' onClick={() => handleClick()}>Toggle</button>
-      <PageContext.Provider value={{page, setPage}}>
-        <Pssst pssst={pssst} />
-        <GreetCard dark={dark} />
-        <BackgroundDeco dark={dark} />
-      </PageContext.Provider>
+      <div id='navbar'>
+        <Logo />
+        <ToggleDark setDark={setDark} dark={dark} handleClick={handleClick} />
+      </div>
+      <Pssst pssst={pssst} />
+
+      {
+        page === 'Home' ? (
+          <GreetCard dark={dark} setPage={setPage} />
+        ) : (
+          <PageContext.Provider value={{ page, setPage }}>
+            {page === 'code' ? <CodePage /> : <PhotoPage />}
+          </PageContext.Provider>
+        )
+      }
+      <BackgroundDeco dark={dark} />
     </div>
   )
 }
