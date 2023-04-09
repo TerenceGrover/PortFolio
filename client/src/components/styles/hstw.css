@@ -1,6 +1,89 @@
 #hstw-container {
+  position: relative;
   width: 100vw;
   height: 70vh;
   background: rgb(31, 31, 31);
-  background: linear-gradient(0deg, rgba(31, 31, 31, 1) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1) 80%, rgba(31, 31, 31, 1) 100%);
+  background: linear-gradient(0deg, rgba(31, 31, 31, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1) 90%, rgba(31, 31, 31, 1) 100%);
+}
+
+.hstw-bg{
+  position: absolute;
+  top : 50%;
+  left : 5%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 80%;
+}
+
+#hstw-front-container{
+  background-image: url('./assets/frontHSTW.png');
+  background-repeat: no-repeat;
+  background-size: 300%;
+  background-position: center;
+}
+
+#hstw-back-container{
+  background-image: url('./assets/backHSTW.jpg');
+  background-repeat: no-repeat;
+  background-size: 300%;
+  background-position: center;
+}
+
+#hstw-screenshot-container{
+  position: absolute;
+  top : 0%;
+  right : 0%;
+  width: 40%;
+  height: 100%;
+}
+
+#hstw-screenshot-sub{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 25;
+}
+
+#hstw-screenshot-sub>img{
+  border-radius: 10px;
+}
+
+#hstw-screenshot-1{
+  position : absolute;
+  top : 22.5%;
+  right: 17%;
+  width: 25vw;
+}
+
+#hstw-screenshot-2{
+  position : absolute;
+  top : 45%;
+  right: 7%;
+  z-index: 30;
+  width: 20vw;
+}
+
+#hstw-text{
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.7);
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0.2) 100%);
+}
+
+#hstw-p{
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: left;
+  margin: 0 0 .5em 0;
+  padding: 0;
+  width: 70%;
+  color: white;
 }
