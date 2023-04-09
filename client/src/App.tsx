@@ -4,10 +4,9 @@ import GreetCard from './components/GreetCard'
 import Pssst from './components/Pssst'
 import BackgroundDeco from './components/BackgroundDeco'
 import { PageContext } from './contexts/PageContext'
-import CodePage from './pages/CodePage'
-import PhotoPage from './pages/PhotoPage'
 import ToggleDark from './components/ToggleDark'
 import Logo from './components/Logo'
+import PageMaster from './pages/PageMaster'
 
 function App() {
   // Grab user's preferred theme
@@ -45,7 +44,7 @@ function App() {
           <GreetCard dark={dark} setPage={setPage} />
         ) : (
           <PageContext.Provider value={{ page, setPage }}>
-            {page === 'code' ? <CodePage /> : <PhotoPage />}
+            <PageMaster dark={dark} />
           </PageContext.Provider>
         )
       }

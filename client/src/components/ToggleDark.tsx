@@ -1,7 +1,7 @@
 import './styles/toggle-dark.css'
 import { useEffect } from 'react'
 
-export default function ToggleDark(props : { dark: boolean, setDark: (dark : boolean) => void, handleClick: () => void }) {
+export default function ToggleDark(props: { dark: boolean, setDark: (dark: boolean) => void, handleClick: () => void }) {
 
   useEffect(() => {
     // If user's preferred theme is dark, check the toggle

@@ -1,4 +1,4 @@
-#navbar{
+#navbar {
     letter-spacing: 1px;
     text-transform: uppercase;
     position: sticky;
@@ -9,5 +9,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 50px;
+    padding: 20px 50px;
 }
