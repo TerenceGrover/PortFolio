@@ -51,10 +51,10 @@ export default function GreetCard(props: { dark: boolean, setPage : (page: strin
           country &&
           <Typewriter
             options={{
-              delay: 60
+              delay: 39+1
             }}
             onInit={(typewriter) => {
-              typewriter.typeString('Hey there, nice to meet you,')
+              typewriter.typeString('Hey there, nice to meet you, ')
                 .typeString( 'thanks for coming all the way from ' + country + '! I\'m ' )
                 .pauseFor(300)
                 .typeString('<span id="name">Terence Grover</span>')

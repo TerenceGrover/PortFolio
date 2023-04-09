@@ -13,12 +13,19 @@
 
 .text-container {
   text-align: center;
-  line-height: 2rem;
+  line-height: 2.5rem;
+}
+
+.text-container > * {
+  font-size: 2rem;
 }
 
 .get-started {
   perspective: 750px;
   transition: transform 0.5s ease, background-color 0.5s ease-in-out;
+  margin-top: 2em;
+  font-size: 1.8rem;
+  animation : small-bounce 1s ease-in-out infinite alternate;
 }
 
 .get-started:hover {
@@ -54,4 +61,13 @@
 #code {
   padding: 5px;
   border-radius: 5px;
+}
+
+@keyframes small-bounce {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
+  }
 }

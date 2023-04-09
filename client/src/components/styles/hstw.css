@@ -78,6 +78,13 @@
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0.2) 100%);
 }
 
+#hstw-text > a{
+  text-decoration: none;
+  color : var(--text);
+  font-size: 2em;
+  margin : 1em;
+}
+
 #hstw-p{
   font-size: 1.2em;
   font-weight: 400;

@@ -36,7 +36,7 @@ export default function HSTW() {
         <a href="
               https://www.hstw.io
               " target="_blank" rel="noreferrer">
-          HSTW
+          HOW'S THE WORLD
         </a>
         <p id='hstw-p'>
           A full-stack web application that gathers news from around the world and displays it in a clean, 3D Globe format.
