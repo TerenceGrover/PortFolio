@@ -1,7 +1,7 @@
 #hstw-container {
   position: relative;
   width: 100vw;
-  height: 70vh;
+  height: 85vh;
   background: rgb(31, 31, 31);
   background: linear-gradient(0deg, rgba(31, 31, 31, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1) 90%, rgba(31, 31, 31, 1) 100%);
 }
@@ -46,19 +46,20 @@
 
 #hstw-screenshot-sub>img{
   border-radius: 10px;
+  transform: translateY(-50%);
 }
 
 #hstw-screenshot-1{
   position : absolute;
-  top : 22.5%;
-  right: 17%;
+  top : 40%;
+  right: 12%;
   width: 25vw;
 }
 
 #hstw-screenshot-2{
   position : absolute;
-  top : 45%;
-  right: 7%;
+  top : 62%;
+  right: 4%;
   z-index: 30;
   width: 20vw;
 }
@@ -68,12 +69,13 @@
   top : 50%;
   left : 50%;
   transform: translate(-50%, -50%);
-  width: 45%;
+  width: 55%;
   height: 85%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  gap : 2em;
   background: rgba(0,0,0,0.7);
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0.2) 100%);
 }
@@ -82,10 +84,9 @@
   text-decoration: none;
   color : var(--text);
   font-size: 2em;
-  margin : 1em;
 }
 
-#hstw-p{
+.hstw-p{
   font-size: 1.2em;
   font-weight: 400;
   text-align: left;

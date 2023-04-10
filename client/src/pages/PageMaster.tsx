@@ -2,9 +2,29 @@ import Bananas from '../components/Bananas'
 import HSTW from '../components/HSTW'
 import { MusiQ } from '../components/MusiQ'
 import Wavvvs from '../components/Wavvvs'
+import Portrait from '../components/Portrait'
 import './styles/pages.css'
+import { useEffect, useState } from 'react';
 
 export default function PageMaster(props: { dark: boolean }) {
+
+  const [mouse, setMouse] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      // Throttle
+      if (e.clientX % 2 === 0 && e.clientY % 2 === 0) return;
+      setMouse({
+        x: e.clientX - window.innerWidth / 2,
+        y: e.clientY - window.innerHeight / 2
+      });
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
   return (
     <div className="master-page">
       <div className="page-title">
@@ -45,11 +65,9 @@ export default function PageMaster(props: { dark: boolean }) {
         <div className="section-title" id="hstw">
           {
             props.dark ? (
-              <HSTW />
+              <HSTW mouse={mouse} />
             ) : (
-              <span>
-                Portraits
-              </span>
+              <Portrait mouse={mouse} />
             )
           }
         </div>

@@ -1,0 +1,7 @@
+#polaroid-collection{
+  display : grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+  width: 500px;
+}
