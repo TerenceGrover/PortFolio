@@ -1,10 +1,11 @@
 import './styles/hstw.css'
 import { useEffect, useState } from 'react';
 
-export default function HSTW(props : { mouse : { x : number, y : number }}) {
+export default function HSTW(props: { mouse: { x: number, y: number } }) {
 
   return (
     <div id='hstw-container'>
+      <div id="stars"></div>
       <div className='hstw-bg' id="hstw-back-container"></div>
       <div className='hstw-bg' id="hstw-front-container" style={
         {
@@ -36,18 +37,30 @@ export default function HSTW(props : { mouse : { x : number, y : number }}) {
           Finally, the API is open source, hosted publicly, and can be used by anyone.
         </p>
         <div id="hstw-links">
-          <button onClick={
-            () => {
-              window.open("https://hstw.io", "_blank");
-            }
-          }>
-            HSTW
-          </button>
-          <button onClick={() => {
-            window.open("https://hstwdrop.co/", "_blank");
-          }}>
-            HSTW API
-          </button>
+          <div id="hstw-website-container">
+            <button onClick={
+              () => {
+                window.open("https://hstw.io", "_blank");
+              }
+            }>
+              HSTW
+            </button>
+            <img width={'100px'} className="arrow-pssst hstw-arrow" src='./assets/arrow.png' alt="pssst" />
+            <span className='hstw-helpers' id='hstw-website-helper'>
+              Click here for the website
+            </span>
+          </div>
+          <div id="hstw-api-container">
+            <button onClick={() => {
+              window.open("https://hstwdrop.co/", "_blank");
+            }}>
+              HSTW API
+            </button>
+            <img width={'100px'} className="arrow-pssst hstw-arrow" src='./assets/arrow.png' alt="pssst" />
+            <span className='hstw-helpers' id='hstw-api-helper'>
+              Click here for the API
+            </span>
+          </div>
         </div>
       </div>
     </div >

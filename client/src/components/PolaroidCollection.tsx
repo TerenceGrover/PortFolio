@@ -1,7 +1,9 @@
 import Polaroid from "./Polaroid"
 import './styles/polaroid-collection.css'
+import { useState, useEffect } from 'react';
 
 export default function PolaroidCollection(props: { urls: string[], mouse: { x: number, y: number } }) {
+
   return (
     <div id='polaroid-collection'>
       {

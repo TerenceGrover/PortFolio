@@ -1,41 +1,47 @@
 #toggle-label {
-  width:3rem;
-  height:1.6rem;
+  width: 3rem;
+  height: 1.6rem;
   position: relative;
   display: block;
   background: #ebebeb;
   border-radius: 200px;
-  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
   cursor: pointer;
 }
 
 #toggle-label:after {
   content: "";
-  width:1.4rem;
+  width: 1.4rem;
   height: 1.4rem;
   position: absolute;
-  top:.1rem;
-  left:.1rem;
-  background: linear-gradient(180deg,#ffcc89,#d8860b);
+  top: .1rem;
+  left: .1rem;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
   border-radius: 180px;
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 #toggle-check {
   width: 0;
   height: 0;
   visibility: hidden;
 }
-#toggle-check:checked + #toggle-label {
+
+#toggle-check:checked+#toggle-label {
   background: #242424;
 }
-#toggle-check:checked + #toggle-label:after {
+
+#toggle-check:checked+#toggle-label:after {
   left: 2.8rem;
   transform: translateX(-100%);
-  background: linear-gradient(180deg,#777,#3a3a3a);
+  background: linear-gradient(180deg, #777, #3a3a3a);
 }
-#toggle-label, #toggle-label:after {
+
+#toggle-label,
+#toggle-label:after {
   transition: 0.3s
 }
-#toggle-label:active:after{
+
+#toggle-label:active:after {
   width: 2rem;
 }

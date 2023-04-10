@@ -3,6 +3,7 @@ import HSTW from '../components/HSTW'
 import { MusiQ } from '../components/MusiQ'
 import Wavvvs from '../components/Wavvvs'
 import Portrait from '../components/Portrait'
+import Products from '../components/Products'
 import './styles/pages.css'
 import { useEffect, useState } from 'react';
 
@@ -78,9 +79,7 @@ export default function PageMaster(props: { dark: boolean }) {
             props.dark ? (
               <Bananas />
             ) : (
-              <span>
-                Products
-              </span>
+              <Products />
             )
           }
         </div>

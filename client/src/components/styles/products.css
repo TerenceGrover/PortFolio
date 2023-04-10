@@ -1,0 +1,33 @@
+.products-container{
+  width: 100vw;
+  height: 120vh;
+  padding-top: 20vh;
+  background: rgb(31, 31, 31);
+  background: linear-gradient(0deg, transparent 5%, #b8b8b8 15%, #b8b8b8 85%,  transparent 92.5%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.products{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-info > img{
+  width: 17vw;
+  aspect-ratio: 1;
+  animation: small-hop 4s ease-in-out infinite alternate;
+}
+
+@keyframes small-hop {
+  0% {
+    transform: translateY(7px) rotate(-4deg);
+  }
+  100% {
+    transform: translateY(-7px) rotate(4deg);
+  }
+}

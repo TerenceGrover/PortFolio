@@ -12,7 +12,8 @@ body, html{
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 1.5vw, 1.15rem);
+  overflow-x: hidden;
 }
 
 html {

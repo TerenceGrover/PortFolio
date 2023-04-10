@@ -1,7 +1,7 @@
 .pssst {
   position: absolute;
-  top: 5%;
-  right: 10%;
+  top: 3%;
+  right: 20%;
   transform: translate(-50%, -50%);
 }
 
@@ -12,6 +12,7 @@
 .arrow-pssst {
   position: absolute;
   filter: invert(1) grayscale(100%) brightness(50%) invert(1);
+  transform: rotate(10deg);
 }
 
 .pssst-text {
