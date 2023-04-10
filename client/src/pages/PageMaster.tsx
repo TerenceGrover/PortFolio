@@ -79,7 +79,7 @@ export default function PageMaster(props: { dark: boolean }) {
             props.dark ? (
               <Bananas />
             ) : (
-              <Products />
+              <Products mouse={mouse}/>
             )
           }
         </div>
