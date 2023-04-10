@@ -68,6 +68,7 @@ export default function GreetCard(props: { dark: boolean, setPage : (page: strin
       <button onClick={() => handleClick()} className="get-started">
         Let's peek at my work <span className="arrow"> →</span>
       </button>
+      <span id='tip-greet'>(Tip: Switch between dark and light mode often)</span>
     </div>
   )
 }

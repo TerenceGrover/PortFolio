@@ -63,6 +63,11 @@
   border-radius: 5px;
 }
 
+#tip-greet{
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
 @keyframes small-bounce {
   0% {
     transform: scale(1);
