@@ -1,0 +1,13 @@
+#photo-stack{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+#photo-product{
+  width: clamp(120px, 15vw, 170px);
+  border-radius: 10px;
+}

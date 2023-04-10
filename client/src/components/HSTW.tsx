@@ -30,7 +30,7 @@ export default function HSTW(props: { mouse: { x: number, y: number } }) {
           Daily news fetching at 6:00 AM GMT.
         </p>
         <p className='hstw-p' id='hstw-p2'>
-          Highly responsive and interactive for both desktop and mobile
+          Highly responsive and interactive for both desktop and mobile.
           Using local storage to cache data, reduce API calls and keep user's preferences
         </p>
         <p className='hstw-p' id='hstw-p3'>
