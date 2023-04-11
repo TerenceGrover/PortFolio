@@ -14,7 +14,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   height: 72vh;
-  background-image: url('./assets/backHSTW.jpg');
+  background-image: url('./assets/hstw/backHSTW.jpg');
   opacity: 0.9;
   background-repeat: repeat;
   background-size: 50%;
@@ -32,7 +32,7 @@
 }
 
 #hstw-front-container {
-  background-image: url('./assets/frontHSTW.png');
+  background-image: url('./assets/hstw/frontHSTW.png');
   background-repeat: no-repeat;
   background-size: 300%;
   background-position: center;
@@ -40,7 +40,7 @@
 }
 
 #hstw-back-container {
-  background-image: url('./assets/backHSTW.jpg');
+  background-image: url('./assets/hstw/backHSTW.jpg');
   background-repeat: no-repeat;
   background-size: 300%;
   background-position: center;

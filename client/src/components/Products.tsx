@@ -24,6 +24,7 @@ export default function Products(props: { mouse: { x: number, y: number } }) {
   return (
     <div className='products-container'>
       <div id='products-bg'></div>
+      <h2 id='product-title'>PRODUCTS</h2>
       <div className='products'>
         <div className='product'>
           <div className='product-info'>

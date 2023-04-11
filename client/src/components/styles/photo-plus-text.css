@@ -1,0 +1,7 @@
+#photo-plus-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(100px, 10vw, 200px);
+    width: 90%;
+}

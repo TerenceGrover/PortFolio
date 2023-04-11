@@ -45,3 +45,9 @@
 #toggle-label:active:after {
   width: 2rem;
 }
+
+#toggle-container{
+  width : 100%;
+  display : flex;
+  justify-content : center;
+}

@@ -74,7 +74,7 @@ export default function PageMaster(props: { dark: boolean }) {
         </div>
       </section>
       <section id="section-2" className='page-section'>
-        <div className="section-title" id="bananas">
+        <div className="section-title">
           {
             props.dark ? (
               <Bananas />

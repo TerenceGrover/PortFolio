@@ -14,8 +14,8 @@ export default function HSTW(props: { mouse: { x: number, y: number } }) {
       }></div>
       <div id='hstw-screenshot-container'>
         <div id="hstw-screenshot-sub">
-          <img id='hstw-screenshot-1' src="./assets/countryHSTW.png" alt="HSTW Screenshot" />
-          <img id='hstw-screenshot-2' src="./assets/graphHSTW.png" alt="HSTW Screenshot" />
+          <img id='hstw-screenshot-1' src="./assets/hstw/countryHSTW.png" alt="HSTW Screenshot" />
+          <img id='hstw-screenshot-2' src="./assets/hstw/graphHSTW.png" alt="HSTW Screenshot" />
         </div>
       </div>
       <div id="hstw-text">
