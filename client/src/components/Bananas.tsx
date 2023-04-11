@@ -10,13 +10,33 @@ export default function Bananas() {
               " target="_blank" rel="noreferrer">
           Bananas
         </a>
+        <span>
+          (A real time data visualization of anything, really)
+        </span>
       </div>
       <div id="text-bananas-container">
-        <PhotoPlusText LeftOrRight={'right'} photo={'./assets/bananas/Fight_Screen_Bananas.png'} text={'Bananas are a staple in my diet. I eat them every day.'} />
-        <PhotoPlusText LeftOrRight={'left'} photo={'./assets/bananas/Fight_Screen_Bananas.png'} text={'Bananas are a staple in my diet. I eat them every day.'} />
+        <PhotoPlusText LeftOrRight={'right'} photo={'./assets/bananas/Fight_Screen_Bananas.png'} text={'We designed a game-like interface for rather serious matters and developed a business targeted API. \n From Lottie to Pure CSS animations, we ensure a smooth and original browsing experience. \n Choose 2 metrics from remotely anywhere and let the magic happen.'} />
+        <PhotoPlusText LeftOrRight={'left'} photo={'./assets/bananas/Graph_Bananas.png'} text={'Get a ton of data, a correlation index and deductions from the comparisons'} />
+      </div>
+      <div id='monkey-talk'>
+        <p>
+          Hey there,
+          We have a huge API with a lot of data that we wanted to make more accessible and fun to use.
+          <br />
+          <br />
+          We used Express/Node/Svelte making it fast and easy to use.
+          <br />
+        </p>
+        <button id='monkey-talk-button'
+          onClick={() => {
+            window.open('https://data-banana.com/', '_blank')
+          }}>
+          Check it out!
+        </button>
+        <div id="monkey-talk-arrow" />
       </div>
       <div id="monkey-container">
-        <object id='monkey-svg' data="./assets/bananas/male.svg" width={'370px'} />
+        <object id='monkey-svg' data="./assets/bananas/male.svg" width={'350px'} />
       </div>
     </div>
   )
