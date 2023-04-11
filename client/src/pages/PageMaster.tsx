@@ -6,6 +6,7 @@ import Portrait from '../components/Portrait'
 import Products from '../components/Products'
 import './styles/pages.css'
 import { useEffect, useState } from 'react';
+import Street from '../components/Street'
 
 export default function PageMaster(props: { dark: boolean }) {
 
@@ -47,9 +48,11 @@ export default function PageMaster(props: { dark: boolean }) {
             <span>
               For a couple years, I've been trying some funky stuff with code.
               My top road dog tech stack is <span id='mongo'>M</span><span id='express'>E</span><span id='react'>R</span><span id='node'>N</span>.
-              <br/><span id='python-fanboy'>(I'm a bit of a <b>Python</b> fanboy, too.)</span><br/>
+              <br /><span id='python-fanboy'>(I'm a bit of a <b>Python</b> fanboy, too.)</span><br />
               <br />
               Go my child, explore!
+              <br />
+              TODO : Add a link to my github + A keyword counter
             </span>
           ) : (
             <span>
@@ -79,7 +82,7 @@ export default function PageMaster(props: { dark: boolean }) {
             props.dark ? (
               <Bananas />
             ) : (
-              <Products mouse={mouse}/>
+              <Products mouse={mouse} />
             )
           }
         </div>
@@ -91,7 +94,7 @@ export default function PageMaster(props: { dark: boolean }) {
               <MusiQ />
             ) : (
               <span>
-                Street
+                <Street />
               </span>
             )
           }
