@@ -35,7 +35,15 @@ function App() {
     <div className="App">
       <div id='navbar'>
         <Logo />
-        <ToggleDark setDark={setDark} dark={dark} handleClick={handleClick} />
+        <div id="nav-left" style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          width: '150px'
+        }}>
+          <ToggleDark setDark={setDark} dark={dark} handleClick={handleClick} />
+          <img width={'35px'} src='./assets/menu.png' alt='menu' id='menu' />
+        </div>
       </div>
       <Pssst pssst={pssst} />
 
