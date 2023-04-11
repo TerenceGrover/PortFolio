@@ -1,6 +1,6 @@
 import './styles/photo-plus-text.css'
 
-export default function PhotoPlusText(props: { LeftOrRight: string, photo: string, text: string, percentage1?: string, percentage2?: string }) {
+export default function PhotoPlusText(props: { LeftOrRight: string, photo: string, text: string, percentage1?: string, percentage2?: string, width?: string }) {
 
   const paragraphSplit = props.text.split('\n').map((item, key) => {
     return <p id='photo-text-p' key={key}>{item}</p>
@@ -14,7 +14,7 @@ export default function PhotoPlusText(props: { LeftOrRight: string, photo: strin
       <div className="photo-container" style={{
         width: props.percentage1 ? props.percentage1 : '50%'
       }}>
-        <img id='img-photo-plus-text' width={'100%'} src={props.photo} alt="photo" />
+        <img id='img-photo-plus-text' width={props.width ?? '100%'} src={props.photo} alt="photo" />
       </div>
       <div className="photo-text-container" style={{
         width: props.percentage2 ? props.percentage2 : '50%',

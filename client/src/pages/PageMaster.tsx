@@ -63,7 +63,7 @@ export default function PageMaster(props: { dark: boolean }) {
         }
       </div>
       <section id="section-1" className='page-section'>
-        <div className="section-title" id="hstw">
+        <div className="section-title">
           {
             props.dark ? (
               <HSTW mouse={mouse} />
@@ -85,7 +85,7 @@ export default function PageMaster(props: { dark: boolean }) {
         </div>
       </section>
       <section id="section-3" className='page-section'>
-        <div className="section-title" id="musiq">
+        <div className="section-title">
           {
             props.dark ? (
               <MusiQ />
@@ -99,7 +99,7 @@ export default function PageMaster(props: { dark: boolean }) {
       </section>
       {/* for some reason, my key for four doesn't work, get ready for a bunch of 3+1 */}
       <section id="section-3+1" className='page-section'>
-        <div className="section-title" id="wavvvs">
+        <div className="section-title">
           {
             props.dark ? (
               <Wavvvs />
