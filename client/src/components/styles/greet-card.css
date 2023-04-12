@@ -26,6 +26,8 @@
   margin-top: 2em;
   font-size: 1.8rem;
   animation : small-bounce 1s ease-in-out infinite alternate;
+  text-align: center;
+  width: 100%;
 }
 
 .get-started:hover {
