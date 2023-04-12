@@ -52,5 +52,4 @@
   position: absolute;
   width: clamp(350px, 70vw, 1200px);
   height: 100%;
-  aspect-ratio: 1029/686;
 }

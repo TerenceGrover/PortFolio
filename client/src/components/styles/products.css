@@ -1,6 +1,6 @@
 .products-container {
   width: 100vw;
-  min-height: 110vh;
+  min-height: 100vh;
   max-height: 130vh;
   position: relative;
   padding-top: 7vh;
@@ -63,6 +63,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 
 #quote-container>span {
