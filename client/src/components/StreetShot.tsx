@@ -3,8 +3,8 @@ import './styles/street-shot.css'
 export default function StreetShot(props: { url: string}) {
 
   const randomTopLeftPercentage = () => {
-    const randomTop = Math.floor(Math.random() * 100) + '%'
-    const randomLeft = Math.floor(Math.random() * 100) + '%'
+    const randomTop = Math.floor(Math.random() * 80) + '%'
+    const randomLeft = Math.floor(Math.random() * 80) + '%'
     return { top: randomTop, left: randomLeft }
   }
 
