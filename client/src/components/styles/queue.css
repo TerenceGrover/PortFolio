@@ -22,6 +22,15 @@
   font-weight: bold;
   text-align: center;
   user-select: none;
+  cursor: pointer;
+}
+
+.song-in-transition{
+  transition: transform 1s ease;
+}
+
+.song:hover{
+  transform: scale(1.1);
 }
 
 .playing {
