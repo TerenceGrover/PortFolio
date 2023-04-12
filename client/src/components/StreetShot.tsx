@@ -1,18 +1,23 @@
 import './styles/street-shot.css'
 
-export default function StreetShot(props: { url: string}) {
+export default function StreetShot(props: { pos: { top: string, left: string }, url: string }) {
 
-  const randomTopLeftPercentage = () => {
-    const randomTop = Math.floor(Math.random() * 80) + '%'
-    const randomLeft = Math.floor(Math.random() * 80) + '%'
-    return { top: randomTop, left: randomLeft }
+  const randomDMSCoordinatesString = () => {
+    const NESWArray = ['N', 'E', 'S', 'W']
+    const randomNESW = NESWArray[Math.floor(Math.random() * 4)]
+    const randomDMS = Math.floor(Math.random() * 100) + '°' + Math.floor(Math.random() * 60) + '\'' + Math.floor(Math.random() * 60) + '"'
+    return randomDMS + randomNESW
   }
 
   return (
     <div id="street-shot" style={{
-      ...randomTopLeftPercentage()
+      top: props.pos.top,
+      left: props.pos.left
     }}>
-      <img className="polaroid street-img" src={props.url} alt="Street shot" />
+      <div id='street-img-container'>
+        <img className="street-img" src={props.url} alt="Street shot" />
+        <div className="date">{randomDMSCoordinatesString()}</div>
+      </div>
     </div>
   )
 }

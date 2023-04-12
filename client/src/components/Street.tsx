@@ -4,9 +4,25 @@ import './styles/street.css'
 export default function Street() {
 
   const links = [
-    'https://drive.google.com/uc?id=15G1O7_s_aHtJuz_DOopaXwQVzoT3Z6Zu',
-    'https://drive.google.com/uc?id=1gG9iJcAPJ4Z5IcqzVxf-Ax-QBSA0aDyf',
+    "https://drive.google.com/uc?id=129TQKVfN5xRbSleBmvxJ_BsZNffAk5Yw",
+    "https://drive.google.com/uc?id=19sH5iKMl5OqvtnXVoMMmRGSlilemELy3",
+    "https://drive.google.com/uc?id=1BI457XI_w0oHPvVquGQ0vRl7GOmIqjjf",
+    "https://drive.google.com/uc?id=1BevVvbaV3-Ds0swmq3AoiRpIP8xM0Yof",
+    "https://drive.google.com/uc?id=1K2GpE8XobKW39aPelaaWSGWBitTxGhXV",
+    "https://drive.google.com/uc?id=1TFkI8Fsf-ff43dHfIlcVkqpZuQLZ_MR5",
+    "https://drive.google.com/uc?id=1jmr4_J0aQLXsuaWAfS35SEr2p_RSllhh",
+    "https://drive.google.com/uc?id=1uubtqVKh-9dHgNXQ_GOEyNXOITZ44FDb"
   ]
+
+  const ArrOfPos = Array(links.length).fill({}).map((item, index) => {
+    // Random top that is between 0 and 100 but makes sure that it scales with the index and doesn't go over 80
+    const randomTop = index * 9.75 + 2 + '%'
+    // Random left that is between 0 and 100 but makes sure that it scales with the index and doesn't go over 80
+    const randomLeft = 35 + Math.floor(Math.random() * 65) - 35 + index * 2 + '%'
+    return { top: randomTop, left: randomLeft }
+  })
+
+  console.log(ArrOfPos)
 
   return (
     <div id="street">
@@ -20,7 +36,7 @@ export default function Street() {
           {
             links.map((url, index) => {
               return (
-                <StreetShot url={url} key={index} />
+                <StreetShot url={url} key={index} pos={ArrOfPos[index]} />
               )
             })
           }
