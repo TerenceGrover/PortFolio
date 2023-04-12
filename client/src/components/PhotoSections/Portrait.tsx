@@ -1,6 +1,6 @@
-import PolaroidCollection from "./PolaroidCollection"
-import './styles/portrait.css'
-import MouseContext from '../contexts/MouseContext';
+import PolaroidCollection from "../PolaroidCollection"
+import '../styles/portrait.css'
+import MouseContext from '../../contexts/MouseContext';
 import { useContext } from "react";
 
 export default function Portrait() {

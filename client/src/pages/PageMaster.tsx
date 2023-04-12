@@ -1,14 +1,14 @@
 import { memo, useEffect, useMemo, useState } from 'react';
-import Bananas from '../components/Bananas';
-import HSTW from '../components/HSTW';
-import { MusiQ } from '../components/MusiQ';
-import Wavvvs from '../components/Wavvvs';
-import Portrait from '../components/Portrait';
-import Products from '../components/Products';
+import Bananas from '../components/CodingSections/Bananas';
+import HSTW from '../components/CodingSections/HSTW';
+import { MusiQ } from '../components/CodingSections/MusiQ';
+import Wavvvs from '../components/CodingSections/Wavvvs';
+import Portrait from '../components/PhotoSections/Portrait';
+import Products from '../components/PhotoSections/Products';
 import './styles/pages.css';
-import Street from '../components/Street';
+import Street from '../components/PhotoSections/Street';
 import MouseContext from '../contexts/MouseContext';
-import Landscape from '../components/Landscape';
+import Landscape from '../components/PhotoSections/Landscape';
 
 const MemoizedHSTW = memo(HSTW);
 const MemoizedPortrait = memo(Portrait);

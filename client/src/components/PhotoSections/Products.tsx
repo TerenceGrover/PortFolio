@@ -1,6 +1,6 @@
-import './styles/products.css'
-import PhotoStack from './PhotoStack'
-import MouseContext from '../contexts/MouseContext'
+import '../styles/products.css'
+import PhotoStack from '../PhotoStack'
+import MouseContext from '../../contexts/MouseContext'
 import { useContext } from 'react'
 
 export default function Products() {

@@ -1,5 +1,5 @@
-import './styles/bananas.css'
-import PhotoPlusText from './PhotoPlusText'
+import '../styles/bananas.css'
+import PhotoPlusText from '../PhotoPlusText'
 
 export default function Bananas() {
   return (

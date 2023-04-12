@@ -1,6 +1,6 @@
-import './styles/hstw.css'
+import '../styles/hstw.css'
 import { useContext } from 'react';
-import MouseContext from '../contexts/MouseContext';
+import MouseContext from '../../contexts/MouseContext';
 
 export default function HSTW() {
 

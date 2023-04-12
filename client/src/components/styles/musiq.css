@@ -36,6 +36,16 @@
   align-self: flex-end;
 }
 
+#queue-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2vh 0 10vh 0;
+  padding: 0;
+}
+
 #musiq-image-container {
   display: flex;
   flex-direction: column;

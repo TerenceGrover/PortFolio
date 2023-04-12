@@ -1,5 +1,5 @@
-import StreetShot from './StreetShot'
-import './styles/street.css'
+import StreetShot from '../StreetShot'
+import '../styles/street.css'
 
 export default function Street() {
 
