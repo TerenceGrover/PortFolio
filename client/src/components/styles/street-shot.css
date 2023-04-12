@@ -1,0 +1,8 @@
+#street-shot, .street-img{
+  position: absolute;
+}
+
+.street-img:hover{
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}

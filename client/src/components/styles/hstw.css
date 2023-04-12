@@ -1,7 +1,7 @@
 #hstw-container {
   position: relative;
   width: 100vw;
-  height: 85vh;
+  height: 100vh;
   background: rgb(31, 31, 31);
   background: linear-gradient(0deg, rgba(31, 31, 31, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1) 90%, rgba(31, 31, 31, 1) 100%);
   transition: all 0.5s ease;

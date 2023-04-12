@@ -44,5 +44,12 @@
 }
 
 #street-asset{
-  width: clamp(350px, 60vw, 1200px);
+  width: clamp(350px, 70vw, 1200px);
+}
+
+#street-shots-container {
+  position: absolute;
+  width: clamp(350px, 70vw, 1200px);
+  height: 100%;
+  aspect-ratio: 1029/686;
 }
