@@ -17,11 +17,11 @@ const MemoizedMusiQ = memo(MusiQ);
 const MemoizedStreet = memo(Street);
 const MemoizedWavvvs = memo(Wavvvs);
 
-export default function PageMaster(props) {
+export default function PageMaster(props : {dark : boolean}) {
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e : MouseEvent) => {
       if (e.clientX % 2 === 0 && e.clientY % 2 === 0) return;
       setMouse({
         x: e.clientX - window.innerWidth / 2,
