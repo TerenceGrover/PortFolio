@@ -1,0 +1,10 @@
+#landscape {
+  min-height: 100vh;
+  max-height: 150vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh 0;
+}

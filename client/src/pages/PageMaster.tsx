@@ -8,6 +8,7 @@ import Products from '../components/Products';
 import './styles/pages.css';
 import Street from '../components/Street';
 import MouseContext from '../contexts/MouseContext';
+import Landscape from '../components/Landscape';
 
 const MemoizedHSTW = memo(HSTW);
 const MemoizedPortrait = memo(Portrait);
@@ -84,7 +85,7 @@ export default function PageMaster(props : {dark : boolean}) {
         {/* for some reason, my key for four doesn't work, get ready for a bunch of 3+1 */}
         <section id="section-3+1" className="page-section">
           <div className="section-title">
-            {props.dark ? <MemoizedWavvvs /> : <span>Landscape</span>}
+            {props.dark ? <MemoizedWavvvs /> : <Landscape />}
           </div>
         </section>
       </MouseContext.Provider>
