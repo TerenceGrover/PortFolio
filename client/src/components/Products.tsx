@@ -1,7 +1,11 @@
 import './styles/products.css'
 import PhotoStack from './PhotoStack'
+import MouseContext from '../contexts/MouseContext'
+import { useContext } from 'react'
 
-export default function Products(props: { mouse: { x: number, y: number } }) {
+export default function Products() {
+
+  const { mouse } = useContext(MouseContext)
 
   const CoffeeUrls = [
     "https://drive.google.com/uc?id=1z_uWPzP8KZwfuoapa8pl23jYf2ITwzUn",
@@ -30,19 +34,19 @@ export default function Products(props: { mouse: { x: number, y: number } }) {
           <div className='product-info'>
             <img src="./assets/Beer_3D.png" alt="Beer 3D render" />
           </div>
-          <PhotoStack photoURLS={BeerUrls} mouse={props.mouse} />
+          <PhotoStack photoURLS={BeerUrls} mouse={mouse} />
         </div>
         <div className='product'>
           <div className='product-info'>
             <img src="./assets/Coffee_3D.png" alt="Coffee 3D render" />
           </div>
-          <PhotoStack photoURLS={CoffeeUrls} mouse={props.mouse} />
+          <PhotoStack photoURLS={CoffeeUrls} mouse={mouse} />
         </div>
         <div className='product'>
           <div className='product-info'>
             <img src="./assets/Watch_3D.png" alt="Watch 3D render" />
           </div>
-          <PhotoStack photoURLS={WatchUrls} mouse={props.mouse} />
+          <PhotoStack photoURLS={WatchUrls} mouse={mouse} />
         </div>
       </div>
       <div id="quote-container">

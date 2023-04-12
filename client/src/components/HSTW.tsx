@@ -1,7 +1,10 @@
 import './styles/hstw.css'
-import { useEffect, useState } from 'react';
+import { useContext } from 'react';
+import MouseContext from '../contexts/MouseContext';
 
-export default function HSTW(props: { mouse: { x: number, y: number } }) {
+export default function HSTW() {
+
+  const { mouse } = useContext(MouseContext);
 
   return (
     <div id='hstw-container'>
@@ -9,7 +12,7 @@ export default function HSTW(props: { mouse: { x: number, y: number } }) {
       <div className='hstw-bg' id="hstw-back-container"></div>
       <div className='hstw-bg' id="hstw-front-container" style={
         {
-          transform: `translate(-50%, -50%) translate(${- props.mouse.x / 200}px, ${- props.mouse.y / 200}px)`
+          transform: `translate(-50%, -50%) translate(${- mouse.x / 200}px, ${- mouse.y / 200}px)`
         }
       }></div>
       <div id='hstw-screenshot-container'>

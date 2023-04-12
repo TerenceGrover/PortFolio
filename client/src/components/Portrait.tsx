@@ -1,7 +1,11 @@
 import PolaroidCollection from "./PolaroidCollection"
 import './styles/portrait.css'
+import MouseContext from '../contexts/MouseContext';
+import { useContext } from "react";
 
-export default function Portrait(props: { mouse: { x: number, y: number } }) {
+export default function Portrait() {
+
+  const { mouse } = useContext(MouseContext);
 
   const links = [
     "https://drive.google.com/uc?id=1gG9iJcAPJ4Z5IcqzVxf-Ax-QBSA0aDyf",
@@ -18,8 +22,7 @@ export default function Portrait(props: { mouse: { x: number, y: number } }) {
   return (
     <div id='portrait-container'>
       <div id="polaroid-container">
-        <PolaroidCollection urls={links}
-          mouse={props.mouse} />
+        <PolaroidCollection urls={links} />
       </div>
       <div id="portrait-core-container">
         <div id="portrait-title-container">

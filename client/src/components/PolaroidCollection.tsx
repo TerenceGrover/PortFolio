@@ -1,15 +1,14 @@
 import Polaroid from "./Polaroid"
 import './styles/polaroid-collection.css'
-import { useState, useEffect } from 'react';
 
-export default function PolaroidCollection(props: { urls: string[], mouse: { x: number, y: number } }) {
+export default function PolaroidCollection(props: { urls: string[]}) {
 
   return (
     <div id='polaroid-collection'>
       {
         props.urls.map((url, index) => {
           return (
-            <Polaroid imageUrl={url} aspectRatio={1} mouse={props.mouse} key={index} />
+            <Polaroid imageUrl={url} aspectRatio={1} key={index} />
           )
         })
       }
