@@ -1,7 +1,7 @@
 .pssst {
   position: absolute;
-  top: 3%;
-  right: 20%;
+  top: 2.5%;
+  right: 290px;
   transform: translate(-50%, -50%);
   z-index: 1000;
 }
@@ -19,7 +19,7 @@
 .pssst-text {
   position: absolute;
   width: 10rem;
-  top: 5rem;
+  top: 75px;
   font-size: 0.75rem;
   font-weight: 400;
 }

@@ -4,7 +4,7 @@ import { useState } from 'react';
 export default function Queue() {
 
   const [songVotes, setSongVotes] = useState([
-    { id: 1, title: 'Song 1', votes: 20 },
+    { id: 1, title: 'Song 1', votes: 200000 },
     { id: 2, title: 'Song 2', votes: 12 },
     { id: 3, title: 'Song 3', votes: 5 },
     { id: 4, title: 'Song 4', votes: 3 },
@@ -72,7 +72,7 @@ export default function Queue() {
       <div id="curly-queue">
         <img src='./assets/curly_bracket.png' id='curly-queue-sign' />
 
-        <span id='curly-queue-text'>The added songs are ranked by users' votes</span>
+        <span id='curly-queue-text'>These added songs will play according to votes (try voting)</span>
       </div>
     </div>
   );

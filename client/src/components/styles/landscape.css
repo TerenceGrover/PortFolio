@@ -8,3 +8,36 @@
   align-items: center;
   margin: 3vh 0;
 }
+
+#renders-landscape{
+  position: relative;
+  height: 750px;
+}
+
+#sofa-landscape{
+  position: absolute;
+  width: 800px;
+  height: 800px;
+}
+
+#frame-landscape{
+  position: absolute;
+  top: -75px;
+  left: -20px;
+  width: 500px;
+  height: 600px;
+}
+
+#landscape-image-wrapper{
+  position: absolute;
+  top: 93px;
+  left: 120px;
+  width: 220px;
+  height: 265px;
+}
+
+#landscape-image-wrapper > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

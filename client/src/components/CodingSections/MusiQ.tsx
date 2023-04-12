@@ -28,10 +28,9 @@ export function MusiQ() {
         <div id="musiq-shadow"></div>
       </div>
       <PhotoPlusText LeftOrRight='right' width='300px' percentage1='30%' percentage2='50%' photo='./assets/player_musiq.png' text={'MusiQ allows users to create a room and invite friends to join. Users can then add songs to the queue and vote on songs to be played next. The host can skip songs and remove songs from the queue.\n This is all achieved with Auth0, the Spotify APi and WebSockets! \n Combination of PSQL, Express and React made this possible!'} />
-
       <div id="musiq-action-call">
         <span id='musiq-action-call-text'>
-          Check out the code on Github!
+          Check out the code on :
         </span>
         <button id='musiq-action-call-button'
           onClick={() => {

@@ -1,5 +1,5 @@
 #musiq {
-  max-height: 150vh;
+  /* max-height: 180vh; */
   width: 100%;
   margin: 3vh 0;
   display: flex;
@@ -19,7 +19,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-#catch-phrase-musiq{
+#catch-phrase-musiq {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +28,8 @@
   margin: 2vh 15vw;
   gap: 1vh;
 }
-#musiq-catch-1{
+
+#musiq-catch-1 {
   align-self: flex-start;
 }
 
@@ -36,7 +37,7 @@
   align-self: flex-end;
 }
 
-#queue-container{
+#queue-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,4 +68,26 @@
   background-image: radial-gradient(rgba(175, 175, 175, 0.2),
       rgba(100, 100, 100, 0.2));
   z-index: 1;
+}
+
+#musiq-action-call {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2vh 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#musiq-action-call-button {
+  border-radius: 10px;
+  height: 50px;
+  margin: 2vh 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
 }
