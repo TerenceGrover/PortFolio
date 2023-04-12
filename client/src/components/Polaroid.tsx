@@ -10,7 +10,6 @@ export default function Polaroid(props: {
   const [glazeStyle, setGlazeStyle] = useState({});
   const [date, setDate] = useState('');
   const { mouse } = useContext(MouseContext);
-  console.log(mouse);
 
   const polaroidStyle = {
     paddingBottom: `${10 / props.aspectRatio}%`,
@@ -28,9 +27,6 @@ export default function Polaroid(props: {
   useEffect(() => {
     const dx = (-mouse.x / 10) * 0.1;
     const dy = (-mouse.y / 10) * 0.1;
-
-    const x = -mouse.x / 10;
-    const y = -mouse.y / 10;
 
     setShadow(`${dx}px ${dy}px 7px 3px rgba(0, 0, 0, 0.25)`);
   }, [mouse]);
