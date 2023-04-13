@@ -17,8 +17,8 @@
 
 #sofa-landscape {
   position: absolute;
-  width: 800px;
-  height: 800px;
+  width: clamp(300px, 50vw, 600px);
+  height: clamp(300px, 50vw, 600px);
   bottom: 0;
   filter: drop-shadow(-15px 15px 10px rgba(0, 0, 0, 0.4));
 }

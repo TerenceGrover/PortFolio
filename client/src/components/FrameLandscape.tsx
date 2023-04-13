@@ -5,8 +5,8 @@ export default function FrameLandscape(props: { src: string, width: number, heig
   return (
     <div id="frame-wrapper">
       <div id="frame-subwrapper" style={{
-        width: `${props.width}px`,
-        height: `${props.height}px`,
+        width: `${props.width}vw`,
+        height: `${props.width * props.height}vw`,
         top: props.position?.top,
         left: props.position?.left,
       }}>
