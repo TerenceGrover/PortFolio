@@ -6,8 +6,6 @@
 
 #frame-subwrapper{
   position : relative;
-  width: 500px;
-  height: 600px;
   top: -75px;
   left: -20px;
 }

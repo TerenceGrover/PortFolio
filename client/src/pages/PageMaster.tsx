@@ -17,6 +17,7 @@ const MemoizedProducts = memo(Products);
 const MemoizedMusiQ = memo(MusiQ);
 const MemoizedStreet = memo(Street);
 const MemoizedWavvvs = memo(Wavvvs);
+const MemoizedLandscape = memo(Landscape);
 
 export default function PageMaster(props : {dark : boolean}) {
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
@@ -85,7 +86,7 @@ export default function PageMaster(props : {dark : boolean}) {
         {/* for some reason, my key for four doesn't work, get ready for a bunch of 3+1 */}
         <section id="section-3+1" className="page-section">
           <div className="section-title">
-            {props.dark ? <MemoizedWavvvs /> : <Landscape />}
+            {props.dark ? <MemoizedWavvvs /> : <MemoizedLandscape />}
           </div>
         </section>
       </MouseContext.Provider>
