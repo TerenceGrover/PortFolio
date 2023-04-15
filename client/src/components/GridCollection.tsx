@@ -26,8 +26,8 @@ export default function GridCollection(props: {
               <img src={project.image} alt="" />
             </div>
             <div className="grid-project-text">
-              <h1 className="grid-project-title">{project.title}</h1>
-              <h2 className="grid-project-subtitle">{project.subtitle}</h2>
+              <h4 className="grid-project-title">{project.title}</h4>
+              <span className="grid-project-subtitle">{project.subtitle}</span>
             </div>
           </div>
         );

@@ -80,14 +80,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-#musiq-action-call-button {
-  border-radius: 10px;
-  height: 50px;
-  margin: 2vh 0;
-  font-size: 1.5rem;
+#musiq-action-call-text > a {
+  color: #fff;
   font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-transform: uppercase;
 }

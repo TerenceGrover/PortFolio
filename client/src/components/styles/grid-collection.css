@@ -19,13 +19,13 @@ The projects should all have a screenshot as the background image, and the title
   height: 15vw;
   position: relative;
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 1rem 0 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   text-align: center;
-  box-shadow: 0 0 10px 5px #333;
+  box-shadow: 0 0 10px 5px #10101069;
   cursor: pointer;
 }
 
@@ -63,12 +63,29 @@ The projects should all have a screenshot as the background image, and the title
 }
 
 .grid-project-text {
+  width: 100%;
+  font-size: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   text-align: end;
   z-index: 10;
+  background-color: #1010105f;
+  padding: 5px;
+}
+
+.grid-project-text > * {
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid-project-text > h4 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.grid-project-text > span {
+  font-weight: 400;
 }
 
 .grid-project:nth-child(1) {

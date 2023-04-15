@@ -99,6 +99,12 @@ export default function PageMaster(props : {dark : boolean}) {
                   subtitle: 'A license plate recognition game',
                   image: 'https://user-images.githubusercontent.com/109336882/232229522-d6f522c9-3e78-42be-b478-e9be869f447e.png',
                   link: 'https://github.com/TerenceGrover/LicenseMan'
+                },
+                {
+                  title: 'Three JS Logo',
+                  subtitle: 'A 3D logo made with Three JS',
+                  image: 'https://user-images.githubusercontent.com/109336882/232230530-984f5639-e500-4592-8bb6-c8b0945e120f.png',
+                  link: 'https://github.com/TerenceGrover/Logo-Three-JS'
                 }
               ]
             } /> : <MemoizedLandscape />}
