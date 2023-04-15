@@ -2,7 +2,7 @@ import PhotoPlusText from '../PhotoPlusText'
 import Queue from '../Queue'
 import '../styles/musiq.css'
 
-export function MusiQ() {
+export default function MusiQ() {
   return (
     <div id='musiq'>
       <div id="musiq-title">

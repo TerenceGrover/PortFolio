@@ -1,14 +1,14 @@
 import { memo, useEffect, useMemo, useState } from 'react';
 import Bananas from '../components/CodingSections/Bananas';
 import HSTW from '../components/CodingSections/HSTW';
-import { MusiQ } from '../components/CodingSections/MusiQ';
-import Wavvvs from '../components/CodingSections/Wavvvs';
+import MusiQ from '../components/CodingSections/MusiQ';
+import GridCollection from '../components/GridCollection';
 import Portrait from '../components/PhotoSections/Portrait';
 import Products from '../components/PhotoSections/Products';
-import './styles/pages.css';
 import Street from '../components/PhotoSections/Street';
-import MouseContext from '../contexts/MouseContext';
 import Landscape from '../components/PhotoSections/Landscape';
+import MouseContext from '../contexts/MouseContext';
+import './styles/pages.css';
 
 const MemoizedHSTW = memo(HSTW);
 const MemoizedPortrait = memo(Portrait);
@@ -16,7 +16,7 @@ const MemoizedBananas = memo(Bananas);
 const MemoizedProducts = memo(Products);
 const MemoizedMusiQ = memo(MusiQ);
 const MemoizedStreet = memo(Street);
-const MemoizedWavvvs = memo(Wavvvs);
+const MemoizedGridCollection = memo(GridCollection);
 const MemoizedLandscape = memo(Landscape);
 
 export default function PageMaster(props : {dark : boolean}) {
@@ -86,7 +86,22 @@ export default function PageMaster(props : {dark : boolean}) {
         {/* for some reason, my key for four doesn't work, get ready for a bunch of 3+1 */}
         <section id="section-3+1" className="page-section">
           <div className="section-title">
-            {props.dark ? <MemoizedWavvvs /> : <MemoizedLandscape />}
+            {props.dark ? <MemoizedGridCollection projects={
+              [
+                {
+                  title: 'Wavvvs',
+                  subtitle: 'A minimal audio sharing platform',
+                  image: 'https://camo.githubusercontent.com/4ac4109a5647a283c2c40067fcec34eeb92c00a4511ef95fc01d2bc20629ded5/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646c73686667776a612f696d6167652f75706c6f61642f76313637363139393234322f6c777678686f64736769716f71397963793077612e706e67',
+                  link: 'https://github.com/MateoPresaCastro/wavvvs'
+                },
+                {
+                  title: 'License Man',
+                  subtitle: 'A license plate recognition game',
+                  image: 'https://camo.githubusercontent.com/4ac4109a5647a283c2c40067fcec34eeb92c00a4511ef95fc01d2bc20629ded5/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646c73686667776a612f696d6167652f75706c6f61642f76313637363139393234322f6c777678686f64736769716f71397963793077612e706e67',
+                  link: 'https://github.com/TerenceGrover/LicenseMan'
+                }
+              ]
+            } /> : <MemoizedLandscape />}
           </div>
         </section>
       </MouseContext.Provider>
