@@ -97,7 +97,7 @@ export default function PageMaster(props : {dark : boolean}) {
                 {
                   title: 'License Man',
                   subtitle: 'A license plate recognition game',
-                  image: 'https://camo.githubusercontent.com/4ac4109a5647a283c2c40067fcec34eeb92c00a4511ef95fc01d2bc20629ded5/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646c73686667776a612f696d6167652f75706c6f61642f76313637363139393234322f6c777678686f64736769716f71397963793077612e706e67',
+                  image: 'https://user-images.githubusercontent.com/109336882/232229522-d6f522c9-3e78-42be-b478-e9be869f447e.png',
                   link: 'https://github.com/TerenceGrover/LicenseMan'
                 }
               ]

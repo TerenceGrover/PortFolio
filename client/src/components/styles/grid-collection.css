@@ -4,19 +4,19 @@ The grid should be able to be changed to a different layout, like a list, or a g
 The projects should all have a screenshot as the background image, and the title of the project as the title. and a subtitle */
 
 #grid-collection-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 1rem;
-  grid-auto-flow: dense;
-  grid-auto-rows: 1fr;
-  grid-auto-columns: 1fr;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 5vw;
+  padding: 2vh 2vw 5vh 2vw;
 }
 
 .grid-project {
+  width: 25vw;
+  height: 15vw;
   position: relative;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -26,6 +26,11 @@ The projects should all have a screenshot as the background image, and the title
   align-items: flex-end;
   text-align: center;
   box-shadow: 0 0 10px 5px #333;
+  cursor: pointer;
+}
+
+.grid-project:hover {
+  transform: scale(1.1);
 }
 
 .grid-project-background {
