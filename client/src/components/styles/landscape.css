@@ -1,6 +1,6 @@
 #landscape {
-  min-height: 100vh;
-  max-height: 150vh;
+  padding: 5vh 0;
+  max-height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -10,15 +10,35 @@
   background-color: rgb(150, 150, 200);
 }
 
+#landscape-title {
+  font-size: 1.75em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline overline;
+  color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .15em;
+}
+
 #renders-landscape {
   position: relative;
-  height: 100vh;
+  height: clamp(150px, 80vw, 1000px);
+  width: 100vw;
 }
 
 #sofa-landscape {
   position: absolute;
   width: clamp(300px, 50vw, 600px);
   height: clamp(300px, 50vw, 600px);
-  bottom: 0;
+  bottom: -5vh;
+  right: clamp(0px, 5vw, 50px);
   filter: drop-shadow(-15px 15px 10px rgba(0, 0, 0, 0.4));
+}
+
+#frames-collections {
+  width: 70%;
+  height: 82%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }

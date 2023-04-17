@@ -1,32 +1,49 @@
-#frame-wrapper {
-  position: absolute;
+#frame-subwrapper{
+  position : relative;
   width: 100%;
   height: 100%;
 }
 
-#frame-subwrapper{
-  position : relative;
-  top: -75px;
-  left: -20px;
-}
-
 #frame-landscape{
-  position: absolute;
   width: 100%;
   height: 100%;
 }
 
 #landscape-image-wrapper{
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 50.2%;
+  left: 50.5%;
   transform: translate(-50%, -50%);
-  width: 44%;
-  height: 44.2%;
+  width: 69%;
+  height: 69%;
 }
 
 #landscape-image-wrapper > img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.frame-wrapper {
+  object-fit: cover;
+}
+
+#frame-0 {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+#frame-1 {
+  grid-area: 1 / 3 / 3 / 4;
+}
+
+#frame-2 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+#frame-3 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+#frame-4 {
+  grid-area: 3 / 3 / 4 / 4;
 }

@@ -22,8 +22,6 @@ export default function Street() {
     return { top: randomTop, left: randomLeft }
   })
 
-  console.log(ArrOfPos)
-
   return (
     <div id="street">
       <div id="street-title">
