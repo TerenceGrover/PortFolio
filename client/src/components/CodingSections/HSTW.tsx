@@ -8,10 +8,17 @@ export default function HSTW() {
 
   return (
     <div id='hstw-container'>
-      <div id="stars"></div>
-      <div className='hstw-bg' id="hstw-back-container"></div>
+      <div id="stars" style={
+        {
+          backgroundImage: `url('./assets/hstw/backHSTW.jpg')`
+        }}></div>
+      <div className='hstw-bg' id="hstw-back-container" style={
+        {
+          backgroundImage: `url('./assets/hstw/backHSTW.jpg')`
+        }}></div>
       <div className='hstw-bg' id="hstw-front-container" style={
         {
+          backgroundImage: `url('./assets/hstw/frontHSTW.png')`,
           transform: `translate(-50%, -50%) translate(${- mouse.x / 200}px, ${- mouse.y / 200}px)`
         }
       }></div>
