@@ -59,7 +59,7 @@ export default function GreetCard(props: { dark: boolean, setPage : (page: strin
                 .pauseFor(300)
                 .typeString('<span id="name">Terence Grover</span>')
                 .pauseFor(500)
-                .typeString(`\nI'm a <span id="photo">Photographer by day</span> && <span id="code">Software Engineer by night</span>`)
+                .typeString(`\n<span id="photo">Photographer by day</span> && <span id="code">Developer by night</span>`)
                 .start();
             }}
           />

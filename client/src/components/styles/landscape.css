@@ -1,6 +1,6 @@
 #landscape {
   padding: 5vh 0;
-  max-height: 100vh;
+  max-height: clamp(1000px, 100vh, 2000px);
   width: 100vw;
   display: flex;
   flex-direction: column;

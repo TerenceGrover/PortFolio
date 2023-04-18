@@ -15,8 +15,8 @@ The projects should all have a screenshot as the background image, and the title
 }
 
 .grid-project {
-  width: 25vw;
-  height: 15vw;
+  width: clamp(250px, 25vw, 500px);
+  height: clamp(175px, 15vw, 350px);
   position: relative;
   border-radius: 0.5rem;
   padding: 1rem 0 0 1rem;
@@ -64,7 +64,6 @@ The projects should all have a screenshot as the background image, and the title
 
 .grid-project-text {
   width: 100%;
-  font-size: 80%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

@@ -12,7 +12,7 @@
 .street-img {
   aspect-ratio: 1;
   object-fit: cover;
-  width: clamp(150px, 10vw, 175px);
+  width: clamp(50px, 10vw, 175px);
   position: relative;
   border-radius: 4px;
 }
@@ -26,8 +26,7 @@
   padding: 10px 10px 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  /* width: 200px; */
-  width: clamp(150px, 10vw, 175px);
+  width: clamp(45px, 10vw, 175px);
   overflow: hidden;
   perspective: 100px;
   transition: transform 0.2s ease;

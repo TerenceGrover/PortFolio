@@ -52,7 +52,7 @@
 
 .date {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: clamp(8px, 2vw ,16px);
   font-family: 'Courier New', monospace;
   color: #444;
   pointer-events: none;
