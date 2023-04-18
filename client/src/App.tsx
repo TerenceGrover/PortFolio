@@ -6,6 +6,7 @@ import BackgroundDeco from './components/BackgroundDeco';
 import ToggleDark from './components/ToggleDark';
 import Logo from './components/Logo';
 import PageMaster from './pages/PageMaster';
+import Footer from './components/Footer';
 
 function App() {
   // Grab user's preferred theme
@@ -44,7 +45,6 @@ function App() {
           }}
         >
           <ToggleDark setDark={setDark} dark={dark} handleClick={handleClick} />
-          <img width={'35px'} src="./assets/menu.png" alt="menu" id="menu" />
         </div>
       </div>
       <Pssst pssst={pssst} />

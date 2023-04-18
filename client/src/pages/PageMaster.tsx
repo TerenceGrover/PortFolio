@@ -9,6 +9,7 @@ import Street from '../components/PhotoSections/Street';
 import Landscape from '../components/PhotoSections/Landscape';
 import MouseContext from '../contexts/MouseContext';
 import './styles/pages.css';
+import Footer from '../components/Footer';
 
 const MemoizedHSTW = memo(HSTW);
 const MemoizedPortrait = memo(Portrait);
@@ -19,11 +20,11 @@ const MemoizedStreet = memo(Street);
 const MemoizedGridCollection = memo(GridCollection);
 const MemoizedLandscape = memo(Landscape);
 
-export default function PageMaster(props : {dark : boolean}) {
+export default function PageMaster(props: { dark: boolean }) {
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = (e : MouseEvent) => {
+    const handleMouseMove = (e: MouseEvent) => {
       if (e.clientX % 2 === 0 && e.clientY % 2 === 0) return;
       setMouse({
         x: e.clientX - window.innerWidth / 2,
@@ -47,7 +48,8 @@ export default function PageMaster(props : {dark : boolean}) {
       <div className="page-sub-title">
         {props.dark ? (
           <span>
-            For a couple years, I've been trying some funky stuff with code. My top road dog tech stack is <span id="mongo">M</span>
+            For a couple years, I've been trying some funky stuff with code. My top road dog tech stack is
+            <span id="mongo">M</span>
             <span id="express">E</span>
             <span id="react">R</span>
             <span id="node">N</span>.
@@ -111,6 +113,7 @@ export default function PageMaster(props : {dark : boolean}) {
           </div>
         </section>
       </MouseContext.Provider>
+        <Footer />
     </div>
   );
 }

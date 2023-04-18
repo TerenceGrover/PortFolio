@@ -10,7 +10,7 @@ export default function FrameLandscape(props: { src: string, index: number}) {
         filter : `hue-rotate(${Math.floor(Math.random()*360)}deg)`
         }} />
         <div id="landscape-image-wrapper">
-          <img id='landscape-image' src={props.src} alt="" />
+          <img width={'300px'} id='landscape-image' src={props.src} alt="" />
         </div>
       </div>
     </div >
