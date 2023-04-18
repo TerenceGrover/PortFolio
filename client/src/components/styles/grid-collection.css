@@ -1,7 +1,11 @@
-/* The project here is to have a grid of differnet coding projects. Grow when hovered, link to the github when clicked, one for each project.
-The grid should be responsive, and the images should be able to be changed.
-The grid should be able to be changed to a different layout, like a list, or a grid with a different number of columns.
-The projects should all have a screenshot as the background image, and the title of the project as the title. and a subtitle */
+#grid-collection-global > h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
 #grid-collection-wrapper {
   display: flex;

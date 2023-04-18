@@ -4,10 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 55%;
+  width: clamp(270px, 55vw, 950px);
   border-top: 2px solid #8d8d8d;
   border-bottom: 2px solid #8d8d8d;
   padding: 2vh 20px;
+  gap: 1vw;
 }
 
 .song {

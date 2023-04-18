@@ -6,7 +6,7 @@ import BackgroundDeco from './components/BackgroundDeco';
 import ToggleDark from './components/ToggleDark';
 import Logo from './components/Logo';
 import PageMaster from './pages/PageMaster';
-import Footer from './components/Footer';
+import MobileContext from './contexts/MobileContext';
 
 function App() {
   // Grab user's preferred theme
@@ -14,6 +14,7 @@ function App() {
   const [dark, setDark] = useState(prefersDark);
   const [pssst, setPssst] = useState(true);
   const [page, setPage] = useState('Home');
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleClick = () => {
     setDark(!dark);
@@ -25,37 +26,69 @@ function App() {
     }
   };
 
+  const setMobile = () => {
+    if (window.innerWidth < 600) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
   useEffect(() => {
     const root = document.getElementById('root') as HTMLElement;
     root.classList.remove(dark ? 'light' : 'dark');
     root.classList.add(dark ? 'dark' : 'light');
   }, [dark]);
 
-  return (
-    <div className="App">
-      <div id="navbar">
-        <Logo />
-        <div
-          id="nav-left"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            width: '150px',
-          }}
-        >
-          <ToggleDark setDark={setDark} dark={dark} handleClick={handleClick} />
-        </div>
-      </div>
-      <Pssst pssst={pssst} />
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      setMobile();
+    });
+    setMobile();
 
-      {page === 'Home' ? (
-        <GreetCard dark={dark} setPage={setPage} />
-      ) : (
-        <PageMaster dark={dark} />
-      )}
-      <BackgroundDeco dark={dark} />
-    </div>
+    return () => {
+      window.removeEventListener('resize', () => {
+        setMobile();
+      });
+    };
+  }, []);
+
+  return (
+    <MobileContext.Provider
+      value={{
+        isMobile: isMobile,
+        setIsMobile: setIsMobile,
+      }}
+    >
+      <div className="App">
+        <div id="navbar">
+          <Logo />
+          <div
+            id="nav-left"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              width: '150px',
+            }}
+          >
+            <ToggleDark
+              setDark={setDark}
+              dark={dark}
+              handleClick={handleClick}
+            />
+          </div>
+        </div>
+        <Pssst pssst={pssst} />
+
+        {page === 'Home' ? (
+          <GreetCard dark={dark} setPage={setPage} />
+        ) : (
+          <PageMaster dark={dark} />
+        )}
+        <BackgroundDeco dark={dark} />
+      </div>
+    </MobileContext.Provider>
   );
 }
 

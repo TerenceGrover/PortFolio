@@ -11,7 +11,7 @@ export default function GridCollection(props: {
   return (
     <div id="grid-collection-global">
       <h3>
-        Haven't had enough yet? There's more!
+        Aaaand there's more
       </h3>
       <div id="grid-collection-wrapper">
         {props.projects.map((project, index) => {

@@ -7,8 +7,7 @@
   padding: 10px 10px 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  /* width: 200px; */
-  width: clamp(75px, 10vw, 200px);
+  width: clamp(100px, 10vw, 200px);
   overflow: hidden;
   perspective: 100px;
   transition: transform 0.2s ease;
@@ -52,10 +51,11 @@
 
 .date {
   margin-top: 10px;
-  font-size: clamp(8px, 2vw ,16px);
+  font-size: clamp(8px, 2vw , 14px);
   font-family: 'Courier New', monospace;
   color: #444;
   pointer-events: none;
+  font-weight: 500;
 }
 
 #camera{
