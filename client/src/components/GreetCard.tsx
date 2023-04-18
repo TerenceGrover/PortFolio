@@ -47,6 +47,7 @@ export default function GreetCard(props: { dark: boolean, setPage : (page: strin
   return (
     <div className="greet-card">
       <div className="text-container">
+        <span id="greet">Hey there, nice to meet you!</span>
         {
           country &&
           <Typewriter
@@ -54,8 +55,7 @@ export default function GreetCard(props: { dark: boolean, setPage : (page: strin
               delay: 39+1
             }}
             onInit={(typewriter) => {
-              typewriter.typeString('Hey there, nice to meet you, ')
-                .typeString( 'thanks for coming all the way from ' + country + '! I\'m ' )
+              typewriter.typeString('Thanks for coming all the way from ' + country + '! I\'m ')
                 .pauseFor(300)
                 .typeString('<span id="name">Terence Grover</span>')
                 .pauseFor(500)
