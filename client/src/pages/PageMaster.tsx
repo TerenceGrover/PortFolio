@@ -49,7 +49,7 @@ export default function PageMaster(props: { dark: boolean }) {
         {props.dark ? (
           <span>
             For a couple years, I've been trying some funky stuff with code. My top road dog tech stack is
-            <span id="mongo">M</span>
+            <span id="mongo"> M</span>
             <span id="express">E</span>
             <span id="react">R</span>
             <span id="node">N</span>.
