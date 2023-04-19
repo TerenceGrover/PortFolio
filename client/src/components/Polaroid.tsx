@@ -1,5 +1,5 @@
 import './styles/polaroid.css';
-import { useState, useContext, useEffect, useRef } from 'react';
+import { useState, useContext, useEffect, useRef, useCallback } from 'react';
 import MouseContext from '../contexts/MouseContext';
 
 export default function Polaroid(props: {
@@ -10,23 +10,17 @@ export default function Polaroid(props: {
   const [glazeStyle, setGlazeStyle] = useState({});
   const [date, setDate] = useState('');
   const [isInView, setIsInView] = useState(false);
+
   const { mouse } = useContext(MouseContext);
 
   const componentRef = useRef(null);
 
   const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        setIsInView(true);
-      } else {
-        setIsInView(false);
-      }
-    });
+    const entry = entries.find(e => e.isIntersecting !== undefined);
+    if (entry) {
+      setIsInView(entry.isIntersecting);
+    }
   });
-
-  const polaroidStyle = {
-    paddingBottom: `${10 / props.aspectRatio}%`,
-  };
 
   const getRandomDate = (): string => {
     const min = new Date(2018, 0, 1).getTime();
@@ -41,20 +35,21 @@ export default function Polaroid(props: {
   }, []);
 
   useEffect(() => {
-    if (!isInView) return;
+    if (componentRef.current) observer.observe(componentRef.current);
+
+    const cleanup = () => {
+      if (componentRef.current) observer.unobserve(componentRef.current);
+    };
+
+    if (!isInView) return cleanup;
     const dx = (-mouse.x / 10) * 0.1;
     const dy = (-mouse.y / 10) * 0.1;
     setShadow(`${dx}px ${dy}px 7px 3px rgba(0, 0, 0, 0.25)`);
-  }, [mouse]);
 
-  useEffect(() => {
-    if (componentRef.current) observer.observe(componentRef.current);
-    return () => {
-      if (componentRef.current) observer.unobserve(componentRef.current);
-    };
-  }, [observer, componentRef]);
+    return cleanup;
+  }, [mouse, isInView, observer, componentRef]);
 
-  const handleMouseOver = (e: any) => {
+  const handleMouseOver = useCallback((e: any) => {
     if (e.timeStamp - e.currentTarget.dataset.lastOver < 75) {
       return;
     }
@@ -67,24 +62,22 @@ export default function Polaroid(props: {
     });
 
     // Make the image tilt a bit, depending on the mouse position
-    const dx = (e.clientX - window.innerWidth / 2) / 100;
-    const dy = (e.clientY - window.innerHeight / 2) / 100;
-    e.currentTarget.style.transform = `rotateX(${dy}deg) rotateY(${-dx}deg)`;
-  };
+    e.currentTarget.style.transform = `rotateX(${(e.clientY - window.innerHeight / 2) / 100}deg) rotateY(${-(e.clientX - window.innerWidth / 2) / 100}deg)`;
+  }, []);
 
-  const handleMouseLeave = (e: any) => {
+  const handleMouseLeave = useCallback((e: any) => {
     setGlazeStyle({
       background:
         'linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 10%,  rgba(255, 255, 255, 0.2) 30%, rgba(125, 125, 125, 0.2) 80%, rgba(255, 255, 255, 0.1) 100%)',
     });
     // Reset the tilt
     e.currentTarget.style.transform = 'rotateX(0deg) rotateY(0deg)';
-  };
+  }, []);
 
   return (
     <div
       className="polaroid"
-      style={{ ...polaroidStyle, boxShadow: shadow }}
+      style={{ paddingBottom: `${10 / props.aspectRatio}%`, boxShadow: shadow }}
       onMouseMove={(e) => handleMouseOver(e)}
       onMouseLeave={(e) => handleMouseLeave(e)}
       ref={componentRef}
