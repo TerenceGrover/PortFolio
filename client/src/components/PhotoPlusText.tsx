@@ -38,8 +38,7 @@ export default function PhotoPlusText(props: {
       <div
         className="photo-container"
         style={{
-          
-          width: !isMobile ? props.percentage1 ? props.percentage1 : '50%' : '100%',
+          width: !isMobile ? props.percentage1 ? props.percentage1 : '50%' : '',
         }}
       >
         <img
@@ -53,7 +52,7 @@ export default function PhotoPlusText(props: {
         className="photo-text-container"
         style={{
           width: !isMobile ? props.percentage2 ? props.percentage2 : '50%' : '100%',
-          textAlign: props.LeftOrRight === 'left' ? 'left' : 'right',
+          textAlign: !isMobile ? props.LeftOrRight === 'left' ? 'left' : 'right' : 'center',
         }}
       >
         {paragraphSplit.map((item, key) => {

@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   margin: 3vh 0 0 0;
-  background-color: rgb(150, 150, 200);
+  background-color: rgba(150, 150, 200, 0.371);
 }
 
 #landscape-title {
@@ -15,12 +15,11 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: underline overline;
-  color: aliceblue;
   font-family: 'Roboto', sans-serif;
   letter-spacing: .15em;
 }
 
-#landscape-text{
+#landscape-text {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -52,11 +51,36 @@
   grid-template-rows: repeat(3, 1fr);
 }
 
+#landscape-text {
+  width: 20%;
+  position: relative;
+  align-self: flex-end;
+}
+
+#landscape-text>p {
+  font-size: 1.25em;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .1em;
+  font-weight: 500;
+  margin-right: 30px;
+  margin-top: 30px;
+
+  position: absolute;
+  top: 50px;
+  left: -20px;
+}
+
 
 @media screen and (max-width: 768px) {
   #sofa-landscape {
     width: clamp(200px, 40vw, 300px);
     height: clamp(200px, 40vw, 300px);
     right: clamp(0px, 2vw, 50px);
+    bottom: -7vh;
+  }
+
+  #landscape-text>p {
+    top: -40px;
   }
 }

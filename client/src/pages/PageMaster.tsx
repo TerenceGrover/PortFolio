@@ -58,8 +58,10 @@ export default function PageMaster(props: { dark: boolean }) {
             <br />
             Go my child, explore!
             <br />
-            <GitHubButton href="https://github.com/TerenceGrover" data-size="large" aria-label="Follow @TerenceGrover on GitHub">Follow @TerenceGrover</GitHubButton>
-            </span>
+            <div id="github-follow">
+              <GitHubButton href="https://github.com/TerenceGrover" data-size="large" aria-label="Follow @TerenceGrover on GitHub">Follow @TerenceGrover</GitHubButton>
+            </div>
+          </span>
         ) : (
           <span>
             Portraits, products, and street photography are my main focuses.

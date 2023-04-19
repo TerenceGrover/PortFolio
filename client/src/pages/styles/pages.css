@@ -19,32 +19,20 @@
   font-size: 1.5em;
   font-weight: 400;
   text-align: center;
-  margin: 0 0 2em 0;
+  margin: 0 0 1.5em 0;
   padding: 0;
   width: 70%;
 }
 
-#python-fanboy{
+#python-fanboy {
   font-size: 1rem;
 }
 
-#mongo {
-  color: rgb(85, 255, 85);
+#github-follow {
+  margin-top: 20px ;
 }
 
-#node {
-  color: rgb(65, 65, 255);
-}
-
-#express {
-  color: rgb(255, 255, 101);
-}
-
-#react {
-  color: #76c9df;
-}
-
-.page-section{
+.page-section {
   display: flex;
   flex-direction: column;
   align-items: center;
