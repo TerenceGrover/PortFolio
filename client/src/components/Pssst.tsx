@@ -21,7 +21,7 @@ export default function Pssst(props: { pssst: boolean }) {
       {
         !showCool && props.pssst &&
         <div className="pssst-container">
-          <img width={'100px'} className="arrow-pssst" src='./assets/arrow.png' alt="pssst" />
+          <img className="top-arrow arrow-pssst" src='./assets/arrow.png' alt="pssst" />
           <p className="pssst-text">
             Pssst, try clicking here!
           </p>

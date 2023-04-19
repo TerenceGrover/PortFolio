@@ -4,12 +4,18 @@
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     z-index: 1000;
+}
+
+#nav-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: clamp(50px, 13vw, 150px);
 }
 
 #footer {
@@ -28,7 +34,14 @@
     padding: 0 50px;
 }
 
-#footer-wrapper > a {
+#footer-wrapper>a {
     color: var(--text);
     font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        padding: 15px 25px;
+        background-color: var(--main)
+    }
 }

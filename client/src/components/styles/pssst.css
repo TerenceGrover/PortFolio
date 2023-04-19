@@ -3,11 +3,15 @@
   top: 2.5%;
   right: 290px;
   transform: translate(-50%, -50%);
-  z-index: 1000;
+  z-index: 1500;
 }
 
 .pssst-container {
   position: relative;
+}
+
+.top-arrow {
+  width: 100px;
 }
 
 .arrow-pssst {
@@ -19,11 +23,32 @@
 .pssst-text {
   position: absolute;
   width: 10rem;
-  top: 75px;
   font-size: 0.75rem;
   font-weight: 400;
+  top: 4rem;
 }
 
 #second-pssst {
   top: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .pssst {
+    top: 0;
+    right: 220px;
+  }
+
+  .pssst-text {
+    top: 0;
+  }
+
+  #second-pssst {
+    top: 0;
+  }
+
+  .top-arrow {
+    width: 60px;
+    left: 80px;
+    transform: rotate(145deg) scaleX(-1);
+  }
 }

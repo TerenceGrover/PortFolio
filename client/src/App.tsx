@@ -65,12 +65,6 @@ function App() {
           <Logo />
           <div
             id="nav-left"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              width: '150px',
-            }}
           >
             <ToggleDark
               setDark={setDark}
