@@ -7,7 +7,7 @@ export default function FrameLandscape(props: { src: string, index: number}) {
       <div id="frame-subwrapper" style={{
       }}>
         <img id='frame-landscape' src="./assets/frame_3D.png" alt="" style={{
-        filter : `hue-rotate(${Math.floor(Math.random()*360)}deg)`
+        filter : `hue-rotate(40deg) saturate(1.7) brightness(1.05)`,
         }} />
         <div id="landscape-image-wrapper">
           <img width={'300px'} id='landscape-image' src={props.src} alt="" />
