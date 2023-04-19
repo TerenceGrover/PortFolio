@@ -57,7 +57,9 @@ export default function Queue() {
       {songVotes.map((song, index) => (
         <div onClick={() => handleClick(index)} key={index} className={`song ${index === 0 ? 'playing' : ''}`} style={index !== 0 ? {
           backgroundColor: `hsl(${(song.votes / 20) * 120}, 50%, 30%)`,
-        } : {}}>
+        } : {
+          backgroundImage: `url('./assets/spotify_logo.png')`,
+        }}>
           {index !== 0 ? '+' + song.votes : ''}
           {
             index === 0 && (

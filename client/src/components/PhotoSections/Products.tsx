@@ -49,15 +49,6 @@ export default function Products() {
           <PhotoStack photoURLS={WatchUrls} mouse={mouse} />
         </div>
       </div>
-      <div id="quote-container">
-        <span id="quote-product">
-          Every passion can yield some sort of compensation.
-        </span>
-        <div id='hr-perso'></div>
-        <span id="quote-product2">
-          So why not make a living out of it?
-        </span>
-      </div>
     </div>
   )
 }

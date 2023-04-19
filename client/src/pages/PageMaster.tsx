@@ -10,6 +10,7 @@ import Landscape from '../components/PhotoSections/Landscape';
 import MouseContext from '../contexts/MouseContext';
 import './styles/pages.css';
 import Footer from '../components/Footer';
+import GitHubButton from 'react-github-btn'
 
 const MemoizedHSTW = memo(HSTW);
 const MemoizedPortrait = memo(Portrait);
@@ -48,11 +49,7 @@ export default function PageMaster(props: { dark: boolean }) {
       <div className="page-sub-title">
         {props.dark ? (
           <span>
-            For a couple years, I've been trying some funky stuff with code. My top road dog tech stack is
-            <span id="mongo"> M</span>
-            <span id="express">E</span>
-            <span id="react">R</span>
-            <span id="node">N</span>.
+            I've been coding for quite a while and came up with some funky projects. Mostly using the MERN stack.
             <br />
             <span id="python-fanboy">
               (I'm a bit of a <b>Python</b> fanboy, too.)
@@ -61,13 +58,11 @@ export default function PageMaster(props: { dark: boolean }) {
             <br />
             Go my child, explore!
             <br />
-            TODO: Add a link to my Github + a keyword counter
-          </span>
+            <GitHubButton href="https://github.com/TerenceGrover" data-size="large" aria-label="Follow @TerenceGrover on GitHub">Follow @TerenceGrover</GitHubButton>
+            </span>
         ) : (
           <span>
-            From portraits to products or street photography, I enjoy capturing subjects I'm familiar with.
-            <br />
-            Highlighting the charm of my surroundings is a fun mission.
+            Portraits, products, and street photography are my main focuses.
             <br />
             If anything catches your eye, feel free to reach out!
           </span>
@@ -113,7 +108,7 @@ export default function PageMaster(props: { dark: boolean }) {
           </div>
         </section>
       </MouseContext.Provider>
-        <Footer />
+      <Footer />
     </div>
   );
 }

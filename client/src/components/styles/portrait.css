@@ -27,7 +27,7 @@
 }
 
 #portrait-core-container{
-  width: 62.5%;
+  width: 62%;
 }
 
 #portrait-text-container{
@@ -35,4 +35,13 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  #polaroid-container{
+    transform: translateX(10%);
+  }
+  #portrait-core-container{
+    width: 55%;
+  }
 }

@@ -1,11 +1,11 @@
 import PolaroidCollection from "../PolaroidCollection"
 import '../styles/portrait.css'
-import MouseContext from '../../contexts/MouseContext';
+import MobileContext from '../../contexts/MobileContext';
 import { useContext } from "react";
 
 export default function Portrait() {
 
-  const { mouse } = useContext(MouseContext);
+  const { isMobile } = useContext(MobileContext);
 
   const links = [
     "https://drive.google.com/uc?id=1gG9iJcAPJ4Z5IcqzVxf-Ax-QBSA0aDyf",
@@ -18,6 +18,10 @@ export default function Portrait() {
     "https://drive.google.com/uc?id=1-Dwxj-QPHsPmWR6ac6D5_zzPeG4zq9g7",
     "https://drive.google.com/uc?id=15G1O7_s_aHtJuz_DOopaXwQVzoT3Z6Zu"
   ]
+
+  if (isMobile) {
+    links.pop();
+  }
 
   return (
     <div id='portrait-container'>
@@ -36,9 +40,6 @@ export default function Portrait() {
           </p>
           <p id="portrait-text2">
             Animals are quite a big part of my portrait work. From pets to insects to livestock, they have a completely different essence than humans which is refreshing. Their eyes are generally my focus, much can be seen through them.
-          </p>
-          <p id="portrait-text3">
-            While I have been working for clients on single day shoots, i truly believe that a longer exposure to the models is important to capture their core and personality.
           </p>
         </div>
       </div>
