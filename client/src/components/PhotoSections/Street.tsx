@@ -16,9 +16,9 @@ export default function Street() {
 
   const ArrOfPos = Array(links.length).fill({}).map((item, index) => {
     // Random top that is between 0 and 100 but makes sure that it scales with the index and doesn't go over 80
-    const randomTop = index * 9 + Math.floor(Math.random() * 3) + '%'
+    const randomTop = index * 8.75 + Math.floor(Math.random() * 3) + 3 + '%'
     // Random left that is between 0 and 100 but makes sure that it scales with the index and doesn't go over 80
-    const randomLeft = Math.floor(Math.random() * 45) + (index%2 ? index : 0) * 5 + '%'
+    const randomLeft = Math.floor(Math.random() * 36) + (index%2 ? index : 0) * 6.5 + 2 + '%'
     return { top: randomTop, left: randomLeft }
   })
 

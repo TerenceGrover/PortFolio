@@ -19,7 +19,7 @@
 }
 
 .grid-project {
-  width: clamp(250px, 25vw, 500px);
+  width: clamp(275px, 28vw, 500px);
   height: clamp(175px, 15vw, 350px);
   position: relative;
   border-radius: 0.5rem;

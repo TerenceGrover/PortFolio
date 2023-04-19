@@ -28,7 +28,7 @@ export default function About() {
         </div>
       </div>
       <div id="profile-picture">
-        <img src="https://drive.google.com/uc?id=1eMapF738u7HMkFtitKOnMqslAhIJQLDB" alt="Profile" />
+        <img width={'500px'} src="https://drive.google.com/uc?id=1eMapF738u7HMkFtitKOnMqslAhIJQLDB" alt="Profile" />
       </div>
     </div>
   );

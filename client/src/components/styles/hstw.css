@@ -155,7 +155,7 @@
   top: 40%;
   transform: rotate(-20deg);
   aspect-ratio: 1;
-  width: 50px;
+  width: 45px;
 }
 
 @media screen and (max-width : 768px) {
@@ -193,6 +193,12 @@
 
   #hstw-screenshot-sub {
     background: none;
+  }
+
+  .hstw-arrow {
+    left: -25%;
+    transform: rotate(-30deg);
+    width: 30px;
   }
 }
 

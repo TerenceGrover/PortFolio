@@ -62,7 +62,7 @@ export default function Polaroid(props: {
     });
 
     // Make the image tilt a bit, depending on the mouse position
-    e.currentTarget.style.transform = `rotateX(${(e.clientY - window.innerHeight / 2) / 100}deg) rotateY(${-(e.clientX - window.innerWidth / 2) / 100}deg)`;
+    e.currentTarget.style.transform = `rotateX(${(e.clientY - window.innerHeight / 2) / 70}deg) rotateY(${-(e.clientX - window.innerWidth / 2) / 70}deg)`;
   }, []);
 
   const handleMouseLeave = useCallback((e: any) => {

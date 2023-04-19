@@ -1,11 +1,15 @@
-export default function Footer() {
+export default function Footer(props : {setPage: Function}) {
   return (
     <div id="footer">
       <div id="footer-wrapper">
-        <a href="" id="about">
+        {/* <a onClick={
+          () => {
+            props.setPage('About')
+          }
+        } id="about">a
           <span>About me</span>
-        </a>
-        <a href="" id="contact">
+        </a> */}
+        <a href="mailto:terencegrover@gmail.com" id="contact">
           <span>Contact me</span>
         </a>
       </div>

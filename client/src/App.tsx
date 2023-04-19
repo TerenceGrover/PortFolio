@@ -7,6 +7,7 @@ import ToggleDark from './components/ToggleDark';
 import Logo from './components/Logo';
 import PageMaster from './pages/PageMaster';
 import MobileContext from './contexts/MobileContext';
+import About from './pages/About';
 
 function App() {
   // Grab user's preferred theme
@@ -77,8 +78,12 @@ function App() {
 
         {page === 'Home' ? (
           <GreetCard dark={dark} setPage={setPage} />
-        ) : (
-          <PageMaster dark={dark} />
+        ) :
+        page === 'About' ? (
+          <About />)
+          :
+        (
+          <PageMaster page={page} setPage={setPage} dark={dark} />
         )}
         <BackgroundDeco dark={dark} />
       </div>

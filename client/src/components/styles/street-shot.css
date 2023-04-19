@@ -23,7 +23,7 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 10px 10px;
+  padding: clamp(5px, 1vw, 15px) clamp(5px, 1vw, 15px) clamp(5px, 1vw, 15px) ;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   width: clamp(45px, 10vw, 175px);

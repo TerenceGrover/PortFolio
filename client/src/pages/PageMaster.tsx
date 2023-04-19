@@ -21,7 +21,7 @@ const MemoizedStreet = memo(Street);
 const MemoizedGridCollection = memo(GridCollection);
 const MemoizedLandscape = memo(Landscape);
 
-export default function PageMaster(props: { dark: boolean }) {
+export default function PageMaster(props: { dark: boolean, page: string, setPage: Function }) {
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -110,7 +110,7 @@ export default function PageMaster(props: { dark: boolean }) {
           </div>
         </section>
       </MouseContext.Provider>
-      <Footer />
+      <Footer setPage = {props.setPage} />
     </div>
   );
 }

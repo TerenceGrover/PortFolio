@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import './styles/greet-card.css'
 import Typewriter from 'typewriter-effect';
 import { useState } from 'react';
+import SocialMedias from './SocialMedias';
 
 export default function GreetCard(props: { dark: boolean, setPage: (page: string) => void }) {
 
@@ -85,6 +86,7 @@ export default function GreetCard(props: { dark: boolean, setPage: (page: string
 
       }
       <span id='tip-greet'>(Tip: Switch between dark and light mode often)</span>
+      <SocialMedias />
     </div>
   )
 }
