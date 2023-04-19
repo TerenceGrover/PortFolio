@@ -4,6 +4,7 @@
     align-items: center;
     gap: clamp(20px, 5vw, 75px);
     width: 90%;
+    z-index: 5;
 }
 
 img#img-photo-plus-text{

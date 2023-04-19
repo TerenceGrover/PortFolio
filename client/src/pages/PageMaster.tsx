@@ -49,14 +49,14 @@ export default function PageMaster(props: { dark: boolean, page: string, setPage
       <div className="page-sub-title">
         {props.dark ? (
           <span>
-            I've been coding for quite a while and came up with some funky projects. Mostly using the MERN stack.
+            Along my <span id='journey'>coding journey</span>, I came up some <span id='funky'>funky projects</span>. Mostly using the MERN stack.
             <br />
             <span id="python-fanboy">
               (I'm a bit of a <b>Python</b> fanboy, too.)
             </span>
             <br />
             <br />
-            Go my child, explore!
+            Go my child, <span id='explore'>explore</span>!
             <br />
             <div id="github-follow">
               <GitHubButton href="https://github.com/TerenceGrover" data-size="large" aria-label="Follow @TerenceGrover on GitHub">Follow @TerenceGrover</GitHubButton>
@@ -66,7 +66,9 @@ export default function PageMaster(props: { dark: boolean, page: string, setPage
           <span>
             Portraits, products, and street photography are my main focuses.
             <br />
-            If anything catches your eye, feel free to reach out!
+            I'm open to collaborations and commissions. Feel free to reach out on
+            <a href="https://www.instagram.com/terencegrover/" target="_blank" rel="noreferrer"> Instagram</a> or {' '}
+            <a href='mailto:terencegrover@gmail.com'>email</a>!
           </span>
         )}
       </div>

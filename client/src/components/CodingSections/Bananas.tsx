@@ -4,6 +4,9 @@ import PhotoPlusText from '../PhotoPlusText'
 export default function Bananas() {
   return (
     <div id='bananas'>
+      <img className='vines' src="./assets/bananas/Vine1.png" alt="" id="vine-1" />
+      <img className='vines' src="./assets/bananas/Vine2.png" alt="" id="vine-2" />
+      <img className='vines' src="./assets/bananas/Vine1.png" alt="" id="vine-3" />
       <div id="title-bananas-container">
         <a href="
               https://data-banana.com/

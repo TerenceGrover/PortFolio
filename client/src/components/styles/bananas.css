@@ -4,6 +4,33 @@
   background-color: #052c46;
   padding-bottom: 7vh;
   overflow: hidden;
+  z-index: 3;
+}
+
+.vines {
+  position: absolute;
+  z-index: 4;
+}
+
+#vine-1 {
+  width: clamp(15rem, 50vw, 25rem);
+  top: 0;
+  left: clamp(-75px, -25%, -200px);
+  transform: rotate(-50deg);
+}
+
+#vine-2 {
+  width: clamp(15rem, 50vw, 45rem);
+  top: clamp(-150px, -15%, -200px);
+  right: 5%;
+  transform: rotate(-10deg);
+}
+
+#vine-3 {
+  width: clamp(10rem, 50vw, 35rem);
+  bottom: clamp(-50px, -20%, -200px);
+  left: -10%;
+  transform: rotate(40deg);
 }
 
 #title-bananas-container {
@@ -19,10 +46,11 @@
 #title-bananas-container>a {
   color: #fcd703;
   text-shadow: 5px 5px 0px #04253b;
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: 900;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-text-stroke: 2px black;
 }
 
 #text-bananas-container {
@@ -55,6 +83,7 @@
   text-align: center;
   font-family: 'Roboto', sans-serif;
   box-shadow: 22px 22px #000000aa;
+  z-index: 5;
 }
 
 #monkey-talk>a {

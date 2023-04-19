@@ -29,7 +29,7 @@
 }
 
 #github-follow {
-  margin-top: 20px ;
+  margin-top: 20px;
 }
 
 .page-section {
@@ -39,4 +39,19 @@
   justify-content: center;
   width: 100%;
   z-index: 100;
+}
+
+#journey {
+  color: #e8665f;
+}
+
+#explore {
+  text-decoration: wavy underline 2px #3e8ebc;
+}
+
+#funky {
+  background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+  background-position: 0 100%;
+  background-size: 100% 3px;
+  background-repeat: repeat-x;
 }

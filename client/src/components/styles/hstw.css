@@ -1,11 +1,11 @@
 #hstw-container {
   position: relative;
   width: 100vw;
-  /* height: 100vh; */
   min-height: 85vh;
   max-height: 100vh;
   background: linear-gradient(0deg, rgba(31, 31, 31, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1) 90%, rgba(31, 31, 31, 1) 100%);
   transition: all 0.5s ease;
+  z-index: 5;
 }
 
 #stars {
@@ -103,6 +103,19 @@
   text-decoration: none;
   color: var(--text);
   font-size: 2em;
+  position: relative;
+}
+
+#hstw-text>a:before {
+  content: "";
+  position: absolute;
+  left: 22%;
+  bottom: -5%;
+  width: 175px;
+  height: 0.4rem;
+  transform: skew(-12deg) translateX(-50%);
+  background: rgba(238, 111, 87, 0.5);
+  z-index: -1;
 }
 
 .hstw-p {
