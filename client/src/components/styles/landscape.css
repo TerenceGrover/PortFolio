@@ -20,6 +20,15 @@
   letter-spacing: .15em;
 }
 
+#landscape-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
 #renders-landscape {
   position: relative;
   height: clamp(150px, 80vw, 1000px);
@@ -42,6 +51,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
+
 
 @media screen and (max-width: 768px) {
   #sofa-landscape {
