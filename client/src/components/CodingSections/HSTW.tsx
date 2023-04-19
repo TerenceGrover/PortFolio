@@ -60,16 +60,15 @@ export default function HSTW() {
           HOW'S THE WORLD
         </a>
         <p className='hstw-p' id='hstw-p'>
-          A full-stack web application that gathers news from around the world and displays it in a clean, 3D Globe format.
-          Front in React, back in Python, and database in MongoDB.
-          Daily news fetching at 6:00 AM GMT.
+          An app that gathers news from around the world. Touch the country on the globe to see the latest news and happiness index.
+          News fetching happens daily at 6:00 AM GMT.
         </p>
         <p className='hstw-p' id='hstw-p2'>
-          Highly responsive and interactive for both desktop and mobile.
-          Using local storage to cache data, reduce API calls and keep user's preferences
+          Our API (basically a little website you can talk to) is public, open source, and can be used by anyone.
         </p>
         <p className='hstw-p' id='hstw-p3'>
-          Finally, the API is open source, hosted publicly, and can be used by anyone.
+          * Highly responsive and interactive for both desktop and mobile.
+          Using local storage to cache data, reduce API calls and keep user's preferences. *
         </p>
         <div id="hstw-links">
           <div id="hstw-website-container">

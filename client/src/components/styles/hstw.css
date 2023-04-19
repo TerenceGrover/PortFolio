@@ -113,6 +113,10 @@
   color: white;
 }
 
+#hstw-p3 {
+  font-size: 0.9rem;
+}
+
 #hstw-links {
   position: relative;
   display: flex;

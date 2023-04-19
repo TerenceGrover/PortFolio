@@ -1,14 +1,12 @@
 #bananas {
   width: 100vw;
-  /* min-height: 100vh;
-  max-height: 130vh; */
   position: relative;
   background-color: #052c46;
   padding-bottom: 7vh;
   overflow: hidden;
 }
 
-#title-bananas-container{
+#title-bananas-container {
   width: 100%;
   margin: 7vh 0vw;
   text-align: center;
@@ -18,7 +16,7 @@
   justify-content: center;
 }
 
-#title-bananas-container > a {
+#title-bananas-container>a {
   color: #fcd703;
   text-shadow: 5px 5px 0px #04253b;
   font-size: 3rem;
@@ -27,7 +25,7 @@
   text-transform: uppercase;
 }
 
-#text-bananas-container{
+#text-bananas-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,16 +33,21 @@
   gap: 5vh;
 }
 
-#monkey-section-wrapper{
+#monkey-section-wrapper {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
 
-#monkey-talk{
+#monkey-talk {
   position: relative;
-  width: 75%;
-  margin: 10vh 0 0 5vw;
+  width: 40vw;
+  margin-top: 5vh;
+  margin-right: 10vw;
   padding: 20px;
   border: 4px solid #fcd703;
   background-color: #fcd70311;
@@ -54,13 +57,13 @@
   box-shadow: 22px 22px #000000aa;
 }
 
-#monkey-talk > a {
+#monkey-talk>a {
   text-decoration: none;
   color: var(--text);
   font-size: 2em;
 }
 
-#monkey-talk-arrow{
+#monkey-talk-arrow {
   position: absolute;
   bottom: 60px;
   right: -30px;
@@ -79,6 +82,13 @@
   transform: translateY(-50%) rotate(-42deg);
 }
 
-#monkey-svg{
-  width : clamp(120px, 20vw, 400px);
+#monkey-svg {
+  width: clamp(120px, 20vw, 400px);
+}
+
+@media screen and (max-width: 768px) {
+  #monkey-talk {
+    width: 55vw;
+    margin-right: 20vw;
+  }
 }
