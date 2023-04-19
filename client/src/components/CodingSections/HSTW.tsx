@@ -1,10 +1,34 @@
 import '../styles/hstw.css'
-import { useContext } from 'react';
 import MouseContext from '../../contexts/MouseContext';
+import { useState, useEffect, useContext, useRef } from 'react';
 
 export default function HSTW() {
 
   const { mouse } = useContext(MouseContext);
+  const [isInView, setIsInView] = useState(false);
+
+  const componentRef = useRef(null);
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setIsInView(true);
+      } else {
+        setIsInView(false);
+      }
+    });
+  });
+
+  useEffect(() => {
+    if (componentRef.current)
+    observer.observe(componentRef.current);
+
+    return () => {
+      if (componentRef.current)
+      observer.unobserve(componentRef.current);
+    };
+  }, [observer, componentRef]);
+
 
   return (
     <div id='hstw-container'>
@@ -16,12 +40,13 @@ export default function HSTW() {
         {
           backgroundImage: `url('./assets/hstw/backHSTW.jpg')`
         }}></div>
-      <div className='hstw-bg' id="hstw-front-container" style={
+      <div className='hstw-bg' id="hstw-front-container" ref={componentRef} style={
         {
           backgroundImage: `url('./assets/hstw/frontHSTW.png')`,
-          transform: `translate(-50%, -50%) translate(${- mouse.x / 200}px, ${- mouse.y / 200}px)`
+          transform: isInView ? `translate(-50%, -50%) translate(${- mouse.x / 200}px, ${- mouse.y / 200}px)` : `translate(-50%, -50%)`
         }
       }></div>
+
       <div id='hstw-screenshot-container'>
         <div id="hstw-screenshot-sub">
           <img id='hstw-screenshot-1' src="./assets/hstw/countryHSTW.png" alt="HSTW Screenshot" />
