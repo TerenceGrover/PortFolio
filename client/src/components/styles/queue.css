@@ -70,7 +70,7 @@
 
 #curly-queue{
   position : absolute;
-  top: 100px;
+  top: clamp(90px, 10vw, 100px);
   left: 10vw;
   display: flex;
   flex-direction: column;
@@ -88,4 +88,13 @@
 #curly-queue-text{
   font-size: 0.9rem;
   font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  #song-playing{
+    top: 5px;
+  }
+  #arrow-song{
+    transform: rotate(-10deg) translateX(-40px) translateY(-5px);
+  }
 }
