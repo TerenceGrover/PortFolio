@@ -66,8 +66,8 @@ export default function PageMaster(props: { dark: boolean, page: string, setPage
           <span>
             Portraits, products, and street photography are my main focuses.
             <br />
-            I'm open to collaborations and commissions. Feel free to reach out on
-            <a href="https://www.instagram.com/terencegrover/" target="_blank" rel="noreferrer"> Instagram</a> or {' '}
+            I'm open to collaborations and commissions. Feel free to reach out on {' '}
+            <a id="instagram-photo" href="https://instagram.com/tgfolio?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer">Instagram</a> or {' '}
             <a href='mailto:terencegrover@gmail.com'>email</a>!
           </span>
         )}
