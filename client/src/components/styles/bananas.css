@@ -15,8 +15,8 @@
 #vine-1 {
   width: clamp(15rem, 50vw, 25rem);
   top: 0;
-  left: clamp(-75px, -25%, -200px);
-  transform: rotate(-50deg);
+  left: clamp(-150px, -20%, -100px);
+  transform: rotate(-30deg);
 }
 
 #vine-2 {
@@ -119,5 +119,9 @@
   #monkey-talk {
     width: 55vw;
     margin-right: 20vw;
+  }
+
+  #title-bananas-container {
+    margin: 5vh 0vw;
   }
 }

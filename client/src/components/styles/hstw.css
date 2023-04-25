@@ -102,14 +102,14 @@
 #hstw-text>a {
   text-decoration: none;
   color: var(--text);
-  font-size: 2em;
+  font-size: 2.25em;
   position: relative;
 }
 
 #hstw-text>a:before {
   content: "";
   position: absolute;
-  left: 22%;
+  left: clamp(80px, 22%, 250px);
   bottom: -5%;
   width: 175px;
   height: 0.4rem;
@@ -185,7 +185,7 @@
     top: 40%;
     height: 50vh;
     left: 70%;
-    width: 75%;
+    width: 70%;
   }
 
   #hstw-screenshot-container {

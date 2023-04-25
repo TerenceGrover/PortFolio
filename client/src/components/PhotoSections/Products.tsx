@@ -27,7 +27,6 @@ export default function Products() {
 
   return (
     <div className='products-container'>
-      <div id='products-bg'></div>
       <h2 id='product-title'>PRODUCTS</h2>
       <div className='products'>
         <div className='product'>
