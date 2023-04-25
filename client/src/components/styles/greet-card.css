@@ -53,6 +53,7 @@
 #tip-greet{
   font-size: 0.9rem;
   font-weight: 300;
+  text-align: center;
 }
 
 @keyframes small-bounce {
@@ -61,5 +62,14 @@
   }
   100% {
     transform: scale(1.02);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .greet-card {
+    width: 80vw;
+  }  
+  .get-started {
+    width: 90vw;
   }
 }
