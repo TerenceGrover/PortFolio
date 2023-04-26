@@ -18,8 +18,8 @@ export default function Bananas() {
         </span>
       </div>
       <div id="text-bananas-container">
-        <PhotoPlusText LeftOrRight={'right'} photo={'./assets/bananas/Fight_Screen_Bananas.png'} text={'The whole concept revolves around comparing two sets of data and see how they are related. \n If you really wanted to know how correlated Brazil Forest area and USA\'s GDP are, check the graph below! (Spoiler: they very much are) \n Choose 2 metrics from remotely anywhere and let the monkeys gather all that sweet data and give you the results!'} />
-        <PhotoPlusText LeftOrRight={'left'} photo={'./assets/bananas/Graph_Bananas.png'} text={'Get a ton of data, a correlation index and deductions from the comparisons. \n Multiple different D3.js powered graphs. \n Pure data from reliable sources formatted for comprehension. \n Tested with Jest and Cypress!'} />
+        <PhotoPlusText LeftOrRight={'right'} photo={'./assets/bananas/Fight_Screen_Bananas.png'} text={'Compares two sets of data and see how they are related. \n If you really wanted to know how correlated Brazil Forest area and USA\'s GDP are, check the graph below! (Spoiler: they very much are) \n Choose 2 metrics from remotely anywhere and let the monkeys gather all that sweet data!'} />
+        <PhotoPlusText LeftOrRight={'left'} photo={'./assets/bananas/Graph_Bananas.png'} text={'Get a ton of data, a correlation index and deductions from the comparisons. \n Powered by D3, tested with Jest and Cypress!'} />
       </div>
       <div id='monkey-section-wrapper'>
       <div id='monkey-talk'>

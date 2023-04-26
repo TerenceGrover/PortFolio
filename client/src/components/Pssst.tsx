@@ -16,7 +16,7 @@ export default function Pssst(props: { pssst: boolean }) {
       {showCool && <p className="pssst-text" id='second-pssst'>
         Pretty cool, right?
         <br />
-        I advise using it throught your journey!
+        Use it often!
         </p>}
       {
         !showCool && props.pssst &&

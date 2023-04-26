@@ -50,4 +50,8 @@
   #portrait-container {
     width: 90vw;
   }
+
+  #portrait-text-container {
+    font-size: 1.35em;
+  }
 }

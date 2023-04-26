@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 768px) {
   .pssst {
-    top: 0;
+    top: 5px;
     right: 220px;
   }
 

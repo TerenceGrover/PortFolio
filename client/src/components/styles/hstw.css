@@ -1,7 +1,7 @@
 #hstw-container {
   position: relative;
   width: 100vw;
-  min-height: 85vh;
+  min-height: clamp(575px, 85vh, 625px);
   max-height: 100vh;
   background: linear-gradient(0deg, rgba(31, 31, 31, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1) 90%, rgba(31, 31, 31, 1) 100%);
   transition: all 0.5s ease;
@@ -14,7 +14,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 72vh;
+  height: 65vh;
   opacity: 0.9;
   background-repeat: repeat;
   background-size: 50%;

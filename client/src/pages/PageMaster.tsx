@@ -44,7 +44,7 @@ export default function PageMaster(props: { dark: boolean, page: string, setPage
   return (
     <div className="master-page">
       <div className="page-title">
-        {props.dark ? <span>&lt; Coding /&gt;</span> : <span>Photography</span>}
+        {props.dark ? <span id='coding-title'>&lt; Coding /&gt;</span> : <span id='photo-title'>Photography</span>}
       </div>
       <div className="page-sub-title">
         {props.dark ? (

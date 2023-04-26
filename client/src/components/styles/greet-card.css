@@ -3,12 +3,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40vw;
+  width: 60vw;
   height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#coding-title {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .text-container {
@@ -54,6 +59,7 @@
   font-size: 0.9rem;
   font-weight: 300;
   text-align: center;
+  margin-top: .33em;
 }
 
 @keyframes small-bounce {
@@ -70,6 +76,6 @@
     width: 80vw;
   }  
   .get-started {
-    width: 90vw;
+    width: 80vw;
   }
 }
