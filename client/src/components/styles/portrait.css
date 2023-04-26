@@ -1,4 +1,4 @@
-#portrait-container{
+#portrait-container {
   position: relative;
   width: 100vw;
   display: flex;
@@ -8,29 +8,29 @@
   height: 100%;
 }
 
-#portrait-title-container{
+#portrait-title-container {
   margin-bottom: 1.5em;
 }
 
-#portrait-title{
+#portrait-title {
   font-size: 1.75em;
   text-align: center;
   padding: 0;
   text-transform: uppercase;
   text-decoration: overline;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: .25em;
+  letter-spacing: 0.25em;
 }
 
-#polaroid-container{
+#polaroid-container {
   transform: translateX(-10%);
 }
 
-#portrait-core-container{
+#portrait-core-container {
   width: 62%;
 }
 
-#portrait-text-container{
+#portrait-text-container {
   width: 75%;
   display: flex;
   flex-direction: column;
@@ -38,10 +38,16 @@
 }
 
 @media screen and (min-width: 768px) {
-  #polaroid-container{
+  #polaroid-container {
     transform: translateX(10%);
   }
-  #portrait-core-container{
+  #portrait-core-container {
     width: 55%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  #portrait-container {
+    width: 90vw;
   }
 }
