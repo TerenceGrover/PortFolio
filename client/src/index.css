@@ -17,6 +17,7 @@ body, html{
   font-weight: 600;
   font-size: clamp(0.8rem, 1.5vw, 1.15rem);
   overflow-x: hidden;
+  background-color: var(--main);
 }
 
 html {
@@ -26,7 +27,6 @@ html {
 
 body {
   height: 100%;
-  /* overflow: auto; */
 }
 
 #root{
