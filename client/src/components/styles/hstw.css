@@ -102,6 +102,8 @@
   color: var(--text);
   font-size: 2.25em;
   position: relative;
+  font-family: 'Farro', sans-serif;
+  letter-spacing: 3px;
 }
 
 #hstw-text>a:before {

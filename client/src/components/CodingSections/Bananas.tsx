@@ -1,9 +1,11 @@
 import '../styles/bananas.css'
 import PhotoPlusText from '../PhotoPlusText'
+import Star from '../Star';
 
 export default function Bananas() {
   return (
     <div id='bananas'>
+      <Star repo='BANaNAS' />
       <img className='vines' src="./assets/bananas/Vine1.png" alt="" id="vine-1" />
       <img className='vines' src="./assets/bananas/Vine2.png" alt="" id="vine-2" />
       <img className='vines' src="./assets/bananas/Vine1.png" alt="" id="vine-3" />

@@ -1,0 +1,12 @@
+#github-star {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 100;
+}
+
+@media screen and (max-width: 500px) {
+  #github-star {
+    display: none;
+  }
+}

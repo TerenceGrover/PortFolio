@@ -1,6 +1,6 @@
 #musiq {
   width: 100%;
-  margin: 3vh 0;
+  margin: 5vh 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,14 +9,17 @@
 
 #musiq-title {
   text-align: center;
+  margin: 1vh 0;
 }
 
 #musiq-title>a {
   text-decoration: none;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   font-weight: 600;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Farro', sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 #catch-phrase-musiq {

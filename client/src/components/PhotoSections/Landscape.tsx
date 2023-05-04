@@ -40,12 +40,6 @@ export default function Landscape() {
           Hall Of <span id="frame">Frames</span>
         </span>
       </div>
-      <div id='landscape-text'>
-        <p>
-          Here are some random shots I enjoyed taking!
-          Not necessarily the best, but I like them.
-        </p>
-      </div>
       <div id="renders-landscape">
         <div id="frames-collections">
           {frameObject &&

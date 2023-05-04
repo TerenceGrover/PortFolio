@@ -1,6 +1,7 @@
 import '../styles/hstw.css'
 import MouseContext from '../../contexts/MouseContext';
 import { useState, useEffect, useContext, useRef } from 'react';
+import Star from '../Star';
 
 export default function HSTW() {
 
@@ -32,6 +33,7 @@ export default function HSTW() {
 
   return (
     <div id='hstw-container'>
+      <Star repo='HSTW' />
       <div id="stars" style={
         {
           backgroundImage: `url('./assets/hstw/backHSTW.jpg')`

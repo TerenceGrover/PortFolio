@@ -49,10 +49,10 @@ export default function PageMaster(props: { dark: boolean, page: string, setPage
       <div className="page-sub-title">
         {props.dark ? (
           <span>
-            Along my <span id='journey'>coding journey</span>, I came up with some <span id='funky'>funky projects</span>. Mostly using the MERN stack.
+            Along my <span id='journey'>coding journey</span>, I came up with some <span id='funky'>funky projects</span>.
             <br />
             <span id="python-fanboy">
-              (I'm a bit of a <b>Python</b> fanboy, too.)
+              (Mostly using the <b>MERN</b> stack but I'm a bit of a <b>Python</b> fanboy, too.)
             </span>
             <br />
             <br />
