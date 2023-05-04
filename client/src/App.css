@@ -1,51 +1,50 @@
-.App {
-    overflow: hidden;
-}
-
 #navbar {
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    position: sticky;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    z-index: 1000;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  z-index: 1000;
 }
 
 #nav-left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: clamp(50px, 13vw, 150px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: clamp(50px, 13vw, 150px);
 }
 
 #footer {
-    width: 100%;
-    height: 50px;
-    z-index: 1000;
-    border-top: 1.5px solid grey;
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
+  border-top: 1.5px solid grey;
 }
 
 #footer-wrapper {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    padding: 0 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 0 50px;
 }
 
-#footer-wrapper>a {
-    color: var(--text);
-    font-family: 'Roboto', sans-serif;
+#footer-wrapper > a {
+  color: var(--text);
+  font-family: 'Farro', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
-    #navbar {
-        padding: 15px 25px;
-        background-color: var(--main)
-    }
+  #navbar {
+    padding: 20px 35px;
+  }
 }

@@ -7,6 +7,7 @@ import ToggleDark from './components/ToggleDark';
 import Logo from './components/Logo';
 import PageMaster from './pages/PageMaster';
 import MobileContext from './contexts/MobileContext';
+import { Helmet } from 'react-helmet';
 
 function App() {
   // Grab user's preferred theme
@@ -60,12 +61,13 @@ function App() {
         setIsMobile: setIsMobile,
       }}
     >
+      <Helmet>
+        <meta name="theme-color" content={dark ? '#1f1f1f' : '#e2e2e2'} />
+      </Helmet>
       <div className="App">
         <div id="navbar">
           <Logo />
-          <div
-            id="nav-left"
-          >
+          <div id="nav-left">
             <ToggleDark
               setDark={setDark}
               dark={dark}
@@ -77,8 +79,7 @@ function App() {
 
         {page === 'Home' ? (
           <GreetCard dark={dark} setPage={setPage} />
-        ) :
-        (
+        ) : (
           <PageMaster page={page} setPage={setPage} dark={dark} />
         )}
         <BackgroundDeco dark={dark} />

@@ -16,17 +16,20 @@ body, html{
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   font-size: clamp(0.8rem, 1.5vw, 1.15rem);
-  overflow-x: hidden;
   background-color: var(--main);
+  color: var(--main);
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
 }
 
 html {
-  overflow: hidden;
-  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 #root{
