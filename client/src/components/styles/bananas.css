@@ -10,6 +10,7 @@
 .vines {
   position: absolute;
   z-index: 4;
+  user-select: none;
 }
 
 #vine-1 {

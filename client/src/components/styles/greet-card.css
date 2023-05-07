@@ -10,6 +10,7 @@
   justify-content: space-around;
   align-items: center;
   font-family: 'Josefin Sans', sans-serif;
+  user-select: none;
 }
 
 #coding-title {
