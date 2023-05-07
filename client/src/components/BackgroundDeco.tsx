@@ -12,7 +12,7 @@ export default function BackgroundDeco(props : { dark: boolean }) {
   return (
     <div className="background-deco">
       {
-        Array(rando(5,6)).fill(0).map((_, i) => {
+        Array(rando(5,7)).fill(0).map((_, i) => {
           return (
             <div
               key={i}
@@ -20,8 +20,10 @@ export default function BackgroundDeco(props : { dark: boolean }) {
               className="deco floaty"
               style={{
                 position: 'absolute',
-                top: `${rando(80,10)}%`,
-                left: `${rando(80,10)}%`,
+                top: `${rando(90,5)}vh`,
+                left: `${rando(90,5)}vw`,
+                overflow: 'hidden',
+                // transform: `translate(-50%, -50%)`,
               }}
             >
               <span style={{ fontSize: `${rando(3,1)}em`, transform: `rotate(${rando(90)}deg)` }}>

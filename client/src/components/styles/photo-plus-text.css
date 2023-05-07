@@ -17,3 +17,11 @@ img#img-photo-plus-text{
   font-weight: 500;
   line-height: 25px;
 }
+
+@media screen and (max-width: 768px) {
+  .photo-text-text{
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+}

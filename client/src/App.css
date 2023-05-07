@@ -1,8 +1,8 @@
+.App {
+  overflow-x: hidden;
+}
+
 #navbar {
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -o-sticky;
-  position: -ms-sticky;
   position: sticky;
   letter-spacing: 1px;
   text-transform: uppercase;

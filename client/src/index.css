@@ -18,18 +18,13 @@ body, html{
   font-size: clamp(0.8rem, 1.5vw, 1.15rem);
   background-color: var(--main);
   color: var(--main);
-  overscroll-behavior-y: none;
-  overscroll-behavior-x: none;
-}
-
-html {
   overflow-x: hidden;
 }
 
 body {
   overflow-y: scroll;
-  overflow-x: hidden;
   scrollbar-width: none;
+  position:relative;
 }
 
 #root{
@@ -38,7 +33,6 @@ body {
   width: 100vw;
   min-height: 100vh;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-  overflow: hidden;
 }
 
 button{

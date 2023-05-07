@@ -69,8 +69,8 @@ export default function HSTW() {
           Our API (basically a little website you can talk to) is public, open source, and can be used by anyone.
         </p>
         <p className='hstw-p' id='hstw-p3'>
-          * Highly responsive and interactive for both desktop and mobile.
-          Using local storage to cache data, reduce API calls and keep user's preferences. *
+          * Highly responsive and interactive. 
+          Cache data, reduced API calls and user's preferences keeping. *
         </p>
         <div id="hstw-links">
           <div id="hstw-website-container">

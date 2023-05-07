@@ -20,7 +20,22 @@
   font-family: 'Farro', sans-serif;
   letter-spacing: 4px;
   text-transform: uppercase;
+  position: relative;
 }
+
+#musiq-title>a:before {
+  content: "";
+  position: absolute;
+  left: clamp(80px, 22%, 250px);
+  bottom: 0;
+  left: 50%;
+  width: 275px;
+  height: 4rem;
+  transform: skew(-12deg) translateX(-50%);
+  background: rgba(238, 111, 87, 0.5);
+  z-index: -1;
+}
+
 
 #catch-phrase-musiq {
   display: flex;
@@ -84,7 +99,8 @@
 }
 
 #musiq-action-call-text {
-  font-size: 1.3em;
+  font-size: clamp(18px, 1.3em, 25px);
+  margin-top: 25px;
 }
 
 #musiq-action-call-text > a {
