@@ -88,6 +88,7 @@
 #curly-queue-text{
   font-size: 0.9rem;
   font-weight: 400;
+  margin-top: -10px;
 }
 
 @media screen and (max-width: 768px) {
