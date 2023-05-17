@@ -1,8 +1,8 @@
 #hstw-container {
   position: relative;
   width: 100vw;
-  min-height: clamp(660px, 85vh, 700px);
-  max-height: 100vh;
+  min-height: clamp(690px, 85vh, 750px);
+  max-height: 110vh;
   background: linear-gradient(0deg, #052c46 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1) 90%, rgba(31, 31, 31, 1) 100%);
   z-index: 5;
 }

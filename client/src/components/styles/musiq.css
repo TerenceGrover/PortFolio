@@ -1,6 +1,6 @@
 #musiq {
   width: 100%;
-  margin: 5vh 0;
+  margin: 7vh 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,28 +9,29 @@
 
 #musiq-title {
   text-align: center;
-  margin: 1vh 0;
+  margin: 2.5vh 0;
 }
 
 #musiq-title>a {
   text-decoration: none;
   color: #fff;
-  font-size: 3.2rem;
+  font-size: 3.4rem;
   font-weight: 600;
   font-family: 'Farro', sans-serif;
   letter-spacing: 4px;
   text-transform: uppercase;
   position: relative;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.75);
 }
 
 #musiq-title>a:before {
   content: "";
   position: absolute;
   left: clamp(80px, 22%, 250px);
-  bottom: 0;
+  bottom: -5px;
   left: 50%;
-  width: 275px;
-  height: 4rem;
+  width: 285px;
+  height: 4.6rem;
   transform: skew(-12deg) translateX(-50%);
   background: rgba(238, 111, 87, 0.5);
   z-index: -1;
@@ -41,18 +42,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-size: clamp(1.4rem, 3.5vw, 2.2rem);
   text-align: center;
   margin: 2vh 15vw;
-  gap: 1vh;
+  gap: 2vh;
 }
 
 #musiq-catch-1 {
   align-self: flex-start;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #musiq-catch-2 {
   align-self: flex-end;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#catch-musiq {
+  text-decoration: underline 6px rgba(238, 111, 87, 0.5);
 }
 
 #queue-container {

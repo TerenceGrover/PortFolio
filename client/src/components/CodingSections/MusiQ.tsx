@@ -17,7 +17,7 @@ export default function MusiQ() {
           Tired of fighting for the AUX or Bluetooth?
         </span>
         <span id='musiq-catch-2'>
-          MusiQ solves this issue straight in Spotify.
+          <span id='catch-musiq'>MusiQ</span> solves this issue straight in Spotify.
         </span>
       </div>
       <div id="queue-container">
