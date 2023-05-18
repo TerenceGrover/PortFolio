@@ -16,6 +16,8 @@ img#img-photo-plus-text{
 .photo-text-text{
   font-weight: 500;
   line-height: 25px;
+  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -23,5 +25,5 @@ img#img-photo-plus-text{
     font-size: 1.3rem;
     font-weight: 600;
   }
-  
+
 }

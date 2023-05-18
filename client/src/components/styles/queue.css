@@ -71,7 +71,7 @@
 #curly-queue{
   position : absolute;
   top: clamp(90px, 10vw, 100px);
-  left: 10vw;
+  left: clamp(120px, 10vw, 160px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +80,7 @@
 }
 
 #curly-queue-sign{
-  width: clamp(220px, 45vw, 950px);
+  width: clamp(220px, 45vw, 800px);
   height: 40px;
   filter: invert(1) grayscale(100%) brightness(65%) invert(1);
 }
