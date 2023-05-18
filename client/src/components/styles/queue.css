@@ -7,7 +7,7 @@
   width: clamp(270px, 55vw, 950px);
   border-top: 2px solid #8d8d8d;
   border-bottom: 2px solid #8d8d8d;
-  padding: 2vh 20px;
+  padding: 2vh 25px;
   gap: 1vw;
 }
 
@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: clamp(30px, 10vw, 50px);
+  width: clamp(30px, 10vw, 60px);
   aspect-ratio: 1;
   border-radius: 50%;
   background-color: #191414;
