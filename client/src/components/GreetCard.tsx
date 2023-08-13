@@ -74,19 +74,21 @@ export default function GreetCard(props: { dark: boolean, setPage: (page: string
           />
         )}
       </div>
-      {
-        props.dark ?
-          <button onClick={() => handleClick()} className="get-started">
-            Let's look at my code →
-          </button>
-          :
-          <button onClick={() => handleClick()} className="get-started">
-            Go check my photos →
-          </button>
+      <div id='low-wrapper'>
+        {
+          props.dark ?
+            <button onClick={() => handleClick()} className="get-started">
+              Let's look at my code →
+            </button>
+            :
+            <button onClick={() => handleClick()} className="get-started">
+              Go check my photos →
+            </button>
 
-      }
-      <span id='tip-greet'>(Tip: Switch between dark and light mode often)</span>
-      <SocialMedias />
+        }
+        <span id='tip-greet'>(Tip: Switch between dark and light mode often)</span>
+        <SocialMedias />
+      </div>
     </div>
   )
 }
