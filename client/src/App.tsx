@@ -8,6 +8,7 @@ import Logo from './components/Logo';
 import PageMaster from './pages/PageMaster';
 import MobileContext from './contexts/MobileContext';
 import { Helmet } from 'react-helmet';
+import BlurryCursor from './components/BlurryCursor';
 
 function App() {
   // Grab user's preferred theme
@@ -84,6 +85,7 @@ function App() {
         )}
         <BackgroundDeco dark={dark} />
       </div>
+      <BlurryCursor />
     </MobileContext.Provider>
   );
 }

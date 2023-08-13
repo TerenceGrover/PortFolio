@@ -5,6 +5,7 @@
   justify-content: center;
   height: 100%;
   width: 100%;
+  z-index: 999;
 }
 
 .page-title {
@@ -32,6 +33,7 @@
 
 #github-follow {
   margin-top: 20px;
+  z-index: 999;
 }
 
 .page-section {
@@ -40,7 +42,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
 }
 
 #journey {

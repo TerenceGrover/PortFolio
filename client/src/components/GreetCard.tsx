@@ -50,45 +50,45 @@ export default function GreetCard(props: { dark: boolean, setPage: (page: string
   }, [props.dark]);
 
   return (
-    <div className="greet-card">
-      <div className="text-container">
-        <span id="greet">Hey there, nice to meet you!</span>
-        {(country || defaultTime) && (
-          <Typewriter
-            options={{
-              delay: 39 + 1
-            }}
-            onInit={(typewriter) => {
-              typewriter.typeString(
-                country ?
-                  ('Thanks for coming all the way from ' + country + '! I\'m ')
-                  :
-                  'I\'m '
-              )
-                .pauseFor(300)
-                .typeString('<span id="name">Terence Grover</span>')
-                .pauseFor(500)
-                .typeString(`\n<span id="photo">Photographer by day</span> && <span id="code">Developer by night</span>`)
-                .start();
-            }}
-          />
-        )}
-      </div>
-      <div id='low-wrapper'>
-        {
-          props.dark ?
-            <button onClick={() => handleClick()} className="get-started">
-              Let's look at my code →
-            </button>
-            :
-            <button onClick={() => handleClick()} className="get-started">
-              Go check my photos →
-            </button>
+      <div className="greet-card">
+        <div className="text-container">
+          <span id="greet">Hey there, nice to meet you!</span>
+          {(country || defaultTime) && (
+            <Typewriter
+              options={{
+                delay: 39 + 1
+              }}
+              onInit={(typewriter) => {
+                typewriter.typeString(
+                  country ?
+                    ('Thanks for coming all the way from ' + country + '! I\'m ')
+                    :
+                    'I\'m '
+                )
+                  .pauseFor(300)
+                  .typeString('<span id="name">Terence Grover</span>')
+                  .pauseFor(500)
+                  .typeString(`\n<span id="photo">Photographer by day</span> && <span id="code">Developer by night</span>`)
+                  .start();
+              }}
+            />
+          )}
+        </div>
+        <div id='low-wrapper'>
+          {
+            props.dark ?
+              <button onClick={() => handleClick()} className="get-started">
+                Let's look at my code →
+              </button>
+              :
+              <button onClick={() => handleClick()} className="get-started">
+                Go check my photos →
+              </button>
 
-        }
-        <span id='tip-greet'>(Tip: Switch between dark and light mode often)</span>
-        <SocialMedias />
+          }
+          <span id='tip-greet'>(Tip: Switch between dark and light mode often)</span>
+          <SocialMedias />
+        </div>
       </div>
-    </div>
   )
 }
