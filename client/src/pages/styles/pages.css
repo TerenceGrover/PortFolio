@@ -8,6 +8,26 @@
   z-index: 999;
 }
 
+#section-1 {
+  transform : translateY(100%);
+  opacity: 0;
+}
+
+#section-2 {
+  transform : translateX(120%);
+  opacity: 0;
+}
+
+#section-3 {
+  transform : translateX(-120%);
+  opacity: 0;
+}
+
+#section-4 {
+  transform : translateX(120%);
+  opacity: 0;
+}
+
 .page-title {
   font-size: 2.5em;
   font-weight: 700;

@@ -71,7 +71,7 @@ useEffect(() => {
     pointerEvents: 'none',
     mixBlendMode: 'soft-light',
     boxShadow: `0 0 10px 10px ${cursorColor}`,
-    zIndex: 99999999999999,
+    zIndex: 99999999999,
   };
 
 

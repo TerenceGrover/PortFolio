@@ -1,4 +1,4 @@
-import { memo, useEffect, useMemo, useState } from 'react';
+import { memo, useEffect, useMemo, useState, useRef } from 'react';
 import Bananas from '../components/CodingSections/Bananas';
 import HSTW from '../components/CodingSections/HSTW';
 import MusiQ from '../components/CodingSections/MusiQ';
@@ -12,6 +12,9 @@ import './styles/pages.css';
 import Footer from '../components/Footer';
 import GitHubButton from 'react-github-btn'
 
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 const MemoizedHSTW = memo(HSTW);
 const MemoizedPortrait = memo(Portrait);
 const MemoizedBananas = memo(Bananas);
@@ -20,6 +23,8 @@ const MemoizedMusiQ = memo(MusiQ);
 const MemoizedStreet = memo(Street);
 const MemoizedGridCollection = memo(GridCollection);
 const MemoizedLandscape = memo(Landscape);
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function PageMaster(props: { dark: boolean, page: string, setPage: Function }) {
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
@@ -32,6 +37,37 @@ export default function PageMaster(props: { dark: boolean, page: string, setPage
         y: e.clientY - window.innerHeight / 2,
       });
     };
+
+    gsap.to("#section-1", {
+      transform: 'translateY(0)',
+      opacity: 1
+    }).delay(0.1);
+
+    gsap.to("#section-2", {
+      transform: 'translateX(0)',
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "#section-2",
+      }
+    });
+
+    // Animate from the right
+    gsap.to("#section-3", {
+      transform: 'translateX(0)',
+      opacity: 1,
+      scrollTrigger: {
+        trigger: '#section-3',
+      }
+    });
+
+    gsap.to("#section-4", {
+      transform: 'translateX(0)',
+      opacity: 1,
+      scrollTrigger: {
+        trigger: '#section-4',
+      }
+    });
+
     window.addEventListener('mousemove', handleMouseMove);
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
@@ -85,7 +121,7 @@ export default function PageMaster(props: { dark: boolean, page: string, setPage
           </div>
         </section>
         {/* for some reason, my key for four doesn't work, get ready for a bunch of 3+1 */}
-        <section id="section-3+1" className="page-section">
+        <section id="section-4" className="page-section">
           <div className="section-title">
             {props.dark ? <MemoizedGridCollection projects={
               [
@@ -112,7 +148,7 @@ export default function PageMaster(props: { dark: boolean, page: string, setPage
           </div>
         </section>
       </MouseContext.Provider>
-      <Footer setPage = {props.setPage} />
+      <Footer setPage={props.setPage} />
     </div>
   );
 }
