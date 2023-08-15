@@ -14,6 +14,15 @@
   z-index: 9999;
 }
 
+#greet {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 .5em 0;
+  padding: 0;
+  font-family: 'Futura Condensed Extra', sans-serif;
+}
+
 #coding-title {
   font-family: 'Josefin Sans', sans-serif;
 }
