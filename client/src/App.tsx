@@ -63,7 +63,7 @@ function App() {
       }}
     >
       <Helmet>
-        <meta name="theme-color" content={dark ? '#1f1f1f' : '#e2e2e2'} />
+        <meta name="theme-color" content={dark ? '#111111' : '#f0f0f0'} />
       </Helmet>
       <div className="App">
         <div id="navbar">

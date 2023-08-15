@@ -3,11 +3,14 @@ import './styles/greet-card.css'
 import Typewriter from 'typewriter-effect';
 import { useState } from 'react';
 import SocialMedias from './SocialMedias';
+import { gsap } from 'gsap';
+
 
 export default function GreetCard(props: { dark: boolean, setPage: (page: string) => void }) {
 
   const [country, setCountry] = useState(null);
   const [defaultTime, setDefaultTime] = useState(false);
+  const [showTip, setShowTip] = useState(false);
 
   const handleClick = () => {
     if (props.dark) {
@@ -34,6 +37,16 @@ export default function GreetCard(props: { dark: boolean, setPage: (page: string
     }
       , 750);
 
+    setTimeout(() => {
+      gsap.to("#low-wrapper", {
+        opacity: 1,
+        transform: 'translateY(0)',
+        duration: 1,
+        ease: 'power4.out'
+      });
+    }
+      , 5000);
+
   }, []);
 
   useEffect(() => {
@@ -56,7 +69,7 @@ export default function GreetCard(props: { dark: boolean, setPage: (page: string
           {(country || defaultTime) && (
             <Typewriter
               options={{
-                delay: 39 + 1
+                delay: 39 + 1,
               }}
               onInit={(typewriter) => {
                 typewriter.typeString(

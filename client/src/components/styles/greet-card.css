@@ -77,6 +77,11 @@
   margin-top: .33em;
 }
 
+#low-wrapper {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
 @keyframes small-bounce {
   0% {
     transform: scale(1);
