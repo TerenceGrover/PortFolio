@@ -142,6 +142,12 @@ export default function PageMaster(props: { dark: boolean, page: string, setPage
                   subtitle: 'A 3D logo made with Three JS',
                   image: 'https://user-images.githubusercontent.com/109336882/232230530-984f5639-e500-4592-8bb6-c8b0945e120f.png',
                   link: 'https://github.com/TerenceGrover/Logo-Three-JS'
+                },
+                {
+                  title: 'Youtube To Wav Converter',
+                  subtitle: 'Downloading YouTube mp3 through a link',
+                  image: 'https://www.founderjar.com/wp-content/uploads/2021/07/youtube-to-wav.jpeg',
+                  link: 'https://github.com/TerenceGrover/youtube-wav-download'
                 }
               ]
             } /> : <MemoizedLandscape />}
