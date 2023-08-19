@@ -148,6 +148,12 @@ export default function PageMaster(props: { dark: boolean, page: string, setPage
                   subtitle: 'Downloading YouTube mp3 through a link',
                   image: 'https://www.founderjar.com/wp-content/uploads/2021/07/youtube-to-wav.jpeg',
                   link: 'https://github.com/TerenceGrover/youtube-wav-download'
+                },
+                {
+                  title: 'PlatesMania random API',
+                  subtitle: 'A random license plate generator',
+                  image: 'https://platesmania.com/bootstrap/img/platesmania.com1.png',
+                  link: 'https://github.com/TerenceGrover/PlatesMania-Random-API'
                 }
               ]
             } /> : <MemoizedLandscape />}
