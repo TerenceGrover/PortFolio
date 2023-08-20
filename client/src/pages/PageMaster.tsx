@@ -4,7 +4,6 @@ import HSTW from '../components/CodingSections/HSTW';
 import MusiQ from '../components/CodingSections/MusiQ';
 import GridCollection from '../components/CodingSections/GridCollection';
 import Portrait from '../components/PhotoSections/Portrait';
-import Products from '../components/PhotoSections/Products';
 import Street from '../components/PhotoSections/Street';
 import Landscape from '../components/PhotoSections/Landscape';
 import Gallery from '../components/PhotoSections/Gallery';
