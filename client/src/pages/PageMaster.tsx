@@ -7,6 +7,7 @@ import Portrait from '../components/PhotoSections/Portrait';
 import Products from '../components/PhotoSections/Products';
 import Street from '../components/PhotoSections/Street';
 import Landscape from '../components/PhotoSections/Landscape';
+import Gallery from '../components/PhotoSections/Gallery';
 import MouseContext from '../contexts/MouseContext';
 import './styles/pages.css';
 import Footer from '../components/Footer';
@@ -18,13 +19,25 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const MemoizedHSTW = memo(HSTW);
 const MemoizedPortrait = memo(Portrait);
 const MemoizedBananas = memo(Bananas);
-const MemoizedProducts = memo(Products);
 const MemoizedMusiQ = memo(MusiQ);
 const MemoizedStreet = memo(Street);
 const MemoizedGridCollection = memo(GridCollection);
 const MemoizedLandscape = memo(Landscape);
+const MemoizedGallery = memo(Gallery);
 
 gsap.registerPlugin(ScrollTrigger);
+
+const images1 = [
+  "https://drive.google.com/uc?id=1z_uWPzP8KZwfuoapa8pl23jYf2ITwzUn",
+  "https://drive.google.com/uc?id=1YC4VL3eSXc3XP5p8QuNMibLa4Cd81UMx",
+  "https://drive.google.com/uc?id=1p4dQPmT7BIjJDw8NtROd5gFQOL_Ug7q2",
+  "https://drive.google.com/uc?id=1CrxiUV3vYf3PWGMVvZZWm-mZ-8D3GT8h",
+  "https://drive.google.com/uc?id=1SpQU7zsc_hy-Ib9IwYpi3sWzmz86uO-_",
+  "https://drive.google.com/uc?id=1FcehwuQPz6DRNwa5n194D1y_pGofgEoB",
+  "https://drive.google.com/uc?id=1hsKNqdhgQu-CHsBLUbXV3KrSnIWnFiX3",
+  "https://drive.google.com/uc?id=1CyOpKwvf-AAO4Dmfme_IYANdxxbwNX-o",
+  "https://drive.google.com/uc?id=1yO9zYEb39tYHw_hq_Ekcvwo-72oejmQb"
+]
 
 export default function PageMaster(props: { dark: boolean, page: string, setPage: Function }) {
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
@@ -113,7 +126,7 @@ export default function PageMaster(props: { dark: boolean, page: string, setPage
           <div className="section-title">{props.dark ? <MemoizedHSTW /> : <MemoizedPortrait />}</div>
         </section>
         <section id="section-2" className="page-section">
-          <div className="section-title">{props.dark ? <MemoizedBananas /> : <MemoizedProducts />}</div>
+          <div className="section-title">{props.dark ? <MemoizedBananas /> : <MemoizedGallery images={images1} />}</div>
         </section>
         <section id="section-3" className="page-section">
           <div className="section-title">
