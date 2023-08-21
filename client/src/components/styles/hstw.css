@@ -6,6 +6,7 @@
   background: linear-gradient(0deg, #052c46 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 1) 90%, rgba(31, 31, 31, 1) 100%);
   z-index: 5;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  padding : 5vh 0;
 }
 
 #stars {
@@ -199,19 +200,15 @@
   }
 
   #hstw-screenshot-container {
-    width: 100%;
-    height: 25%;
-    display: flex;
-    top: 70%;
-    left: 20%;
+    display: none;
   }
 
   #hstw-screenshot-1 {
-    position: relative;
+    display: none;
   }
 
   #hstw-screenshot-2 {
-    position: relative;
+    display: none;
   }
 
   #hstw-screenshot-sub {
@@ -226,9 +223,6 @@
 }
 
 @media screen and (max-width : 600px) {
-  #hstw-screenshot-1 {
-    display: none;
-  }
 
   #hstw-screenshot-container {
     align-items: center;
