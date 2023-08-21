@@ -68,7 +68,7 @@ export default function Polaroid(props: {
   const handleMouseLeave = useCallback((e: any) => {
     setGlazeStyle({
       background:
-        'linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 10%,  rgba(255, 255, 255, 0.2) 30%, rgba(125, 125, 125, 0.2) 80%, rgba(255, 255, 255, 0.1) 100%)',
+        'linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 10%,  rgba(255, 255, 255, 0.15) 30%, rgba(125, 125, 125, 0.15) 80%, rgba(255, 255, 255, 0.1) 100%)',
     });
     // Reset the tilt
     e.currentTarget.style.transform = 'rotateX(0deg) rotateY(0deg)';
