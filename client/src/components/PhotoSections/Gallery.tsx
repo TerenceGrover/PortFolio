@@ -18,7 +18,7 @@ const Gallery = (props : {images : Array<string>}) => {
     >
       {props.images.map((image, index) => (
         <div key={index}>
-          <img src={image} alt={'poto'} />
+          <img style={{maxHeight : "50vh"}} src={image} alt={'poto'} />
         </div>
       ))}
     </Masonry>

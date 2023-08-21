@@ -1,6 +1,5 @@
 #landscape {
   padding: 5vh 0;
-  max-height: clamp(1000px, 100vh, 2000px);
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -21,8 +20,11 @@
 
 #renders-landscape {
   position: relative;
-  height: clamp(150px, 80vw, 1000px);
   width: 100vw;
+}
+
+.gallery-landscape{
+  margin-right: 20vw;
 }
 
 #sofa-landscape {
@@ -32,14 +34,6 @@
   bottom: -5vh;
   right: clamp(0px, 5vw, 50px);
   filter: drop-shadow(-15px 15px 10px rgba(0, 0, 0, 0.4));
-}
-
-#frames-collections {
-  width: 70%;
-  height: 82%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
 }
 
 #landscape-text {

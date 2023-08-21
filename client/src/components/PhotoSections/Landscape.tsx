@@ -1,5 +1,4 @@
-import { useEffect } from 'react'
-import FrameLandscape from '../FrameLandscape'
+import Gallery from './Gallery'
 import '../styles/landscape.css'
 
 export default function Landscape() {
@@ -12,41 +11,35 @@ export default function Landscape() {
     "https://drive.google.com/uc?id=1C4o_MUgWE0BfUH1UPP7uqSwatMZjQkR_",
     "https://drive.google.com/uc?id=1OP3xzPoqWfumy4ed6no3ZHPC5myxbKjb",
     "https://drive.google.com/uc?id=1YddXSAF0mLQPfT_8bsbuPqwDgu1Qug5A",
-    "https://drive.google.com/uc?id=1Zzr5Al9qb07c4zJFje5tnQDoPc-wuCdt"
+    "https://drive.google.com/uc?id=1Zzr5Al9qb07c4zJFje5tnQDoPc-wuCdt",
+    "https://drive.google.com/uc?id=1PnqE86eajNxXw88ERT5FTvNEkJzMUPEO",
+    "https://drive.google.com/uc?id=134rzzSuf0ABq0F5Ny6_4xKVh76XAPRS3",
+    "https://drive.google.com/uc?id=1JMsDxaPBZ5cFtaoLIykR9ztJ5Aop32mS",
+    "https://drive.google.com/uc?id=1zMQe464pM09Ig8iWDUd44hNxcWTPZH50",
+    "https://drive.google.com/uc?id=1atwXg_QYdsVtyV46vI2Ksaq89BlsoFgV",
+    "https://drive.google.com/uc?id=14gYITDfrQmOHt_P-z4d-9LaH0vhcPOP2",
+    "https://drive.google.com/uc?id=1kcl71K22NP-kPflZafF5KC8NDjfssc6J"
   ]
 
-  const pickFive = () => {
-    let result = []
-    for (let i = 0; i < 5; i++) {
-      let randomIndex = Math.floor(Math.random() * PicturePool.length)
-      result.push(PicturePool[randomIndex])
-      PicturePool.splice(randomIndex, 1)
+  const pick = () => {
+    let five = []
+    for (let i = 0; i < 9; i++) {
+      five.push(PicturePool[Math.floor(Math.random() * PicturePool.length)])
+      PicturePool.splice(PicturePool.indexOf(five[i]), 1)
     }
-    return result
-  }
-
-  let frameObject: { src: string }[] = []
-  let framePool = pickFive()
-  for (let i = 0; i < 5; i++) {
-    frameObject.push({
-      src: framePool[i]
-    })
+    return five
   }
 
   return (
     <div id="landscape">
       <div>
         <span id="landscape-title">
-          Hall Of <span id="frame">Frames</span>
+          Landscapes
         </span>
       </div>
       <div id="renders-landscape">
-        <div id="frames-collections">
-          {frameObject &&
-            frameObject.map((frame, index) => {
-              return <FrameLandscape src={frame.src} key={index} index={index} />
-            })
-          }
+        <div className="gallery-landscape">
+          <Gallery images={pick()} />
         </div>
         <img id='sofa-landscape' src="./assets/sofa_3D.png" alt="" />
       </div>
