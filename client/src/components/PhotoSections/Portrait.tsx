@@ -36,10 +36,10 @@ export default function Portrait() {
         </div>
         <div id="portrait-text-container">
           <p id="portrait-text1">
-            I take portraits of beings I care for. Capturing them in either their natural environment, outdoor activities or in the studio.
+            Portrait work is intricate and really gets interesting when you get to know the person.
           </p>
           <p id="portrait-text2">
-            Animals are quite a big part of my portrait work. From pets to insects to livestock, they have a completely different essence than humans which is refreshing. Their eyes are generally my focus, much can be seen through them.
+            Animals are quite a big part of my portrait work. They are much easier to work with than humans.
           </p>
         </div>
       </div>
