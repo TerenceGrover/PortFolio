@@ -23,12 +23,12 @@
 }
 
 #polaroid-container {
-  transform: translateX(25%);
+  transform: translateX(20%);
 }
 
 #portrait-core-container {
   width: 50%;
-  transform: translateX(20%);
+  transform: translateX(30%);
 }
 
 #portrait-text-container {
@@ -45,6 +45,9 @@
   }
   #portrait-core-container {
     width: 50%;
+  }
+  #portrait-core-container {
+    transform: translateX(15%);
   }
 }
 
