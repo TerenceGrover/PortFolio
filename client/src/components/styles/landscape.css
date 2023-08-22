@@ -1,6 +1,5 @@
 #landscape {
   padding: 5vh 0;
-  max-height: clamp(1000px, 100vh, 2000px);
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -21,7 +20,6 @@
 
 #renders-landscape {
   position: relative;
-  height: clamp(150px, 80vw, 1000px);
   width: 100vw;
 }
 
@@ -34,33 +32,6 @@
   filter: drop-shadow(-15px 15px 10px rgba(0, 0, 0, 0.4));
 }
 
-#frames-collections {
-  width: 70%;
-  height: 82%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-
-#landscape-text {
-  width: 20%;
-  position: relative;
-  align-self: flex-end;
-}
-
-#landscape-text>p {
-  font-size: 1.25em;
-  text-align: right;
-  font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: .1em;
-  font-weight: 500;
-  margin-right: 30px;
-  margin-top: 30px;
-  position: absolute;
-  top: 170px;
-  left: -20px;
-}
-
 
 @media screen and (max-width: 768px) {
   #sofa-landscape {
@@ -68,9 +39,5 @@
     height: clamp(200px, 40vw, 300px);
     right: clamp(0px, 2vw, 50px);
     bottom: -7vh;
-  }
-
-  #landscape-text>p {
-    top: -20px;
   }
 }

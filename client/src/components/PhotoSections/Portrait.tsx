@@ -29,7 +29,10 @@ export default function Portrait() {
         </div>
         <div id="portrait-text-container">
           {isMobile ? (
-            <br />
+            <p id="portrait-text1">
+              I take portraits of beings I care for. Capturing them in either
+              their natural environment, outdoor activities or in the studio.
+            </p>
           ) : (
             <>
               <p id="portrait-text1">
