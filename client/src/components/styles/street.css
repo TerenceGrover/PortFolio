@@ -1,5 +1,5 @@
 #street {
-  padding: 5vh 0;
+  padding: 1vh 0 5vh 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +46,7 @@
 }
 
 #street-asset{
-  width: clamp(350px, 70vw, 1200px);
+  width: clamp(350px, 75vw, 1800px);
 }
 
 #street-shots-container {
