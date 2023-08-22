@@ -46,7 +46,7 @@
 }
 
 #street-asset{
-  width: clamp(450px, 75vw, 1800px);
+  width: clamp(370px, 75vw, 1800px);
 }
 
 #street-shots-container {
