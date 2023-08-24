@@ -125,7 +125,7 @@ export default function PageMaster(props: { dark: boolean, page: string, setPage
           <div className="section-title">{props.dark ? <MemoizedHSTW /> : <MemoizedPortrait />}</div>
         </section>
         <section id="section-2" className="page-section">
-          <div className="section-title">{props.dark ? <MemoizedBananas /> : <MemoizedGallery images={images1} />}</div>
+          <div className="section-title">{props.dark ? <MemoizedBananas /> : <MemoizedGallery images={images1} placeholder='placeholder-product' />}</div>
         </section>
         <section id="section-3" className="page-section">
           <div className="section-title">

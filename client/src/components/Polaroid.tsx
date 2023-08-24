@@ -88,7 +88,19 @@ export default function Polaroid(props: {
           aspectRatio: props.aspectRatio,
         }}
       >
-        <img src={props.imageUrl} alt="Polaroid" />
+        <img
+          onError={
+            (e: any) => {
+              // Make it try to load the image again
+              for (let i = 0; i < 3; i++) {
+                e.target.src = props.imageUrl;
+              }
+              // If it fails again, replace it with a placeholder
+              e.target.onerror = null;
+              e.target.src = './assets/placeholder-portrait.jpg';
+            }
+          }
+        src={props.imageUrl} alt="Polaroid" />
         <div className="reflection" style={glazeStyle} />
       </div>
       <div className="date">{date}</div>

@@ -1,7 +1,7 @@
 import Masonry from 'react-masonry-css';
 import '../styles/gallery.css'
 
-const Gallery = (props : {images : Array<string>}) => {
+const Gallery = (props : {images : Array<string>, placeholder : string}) => {
 
   const breakpoints = {
     default: 3,
@@ -18,7 +18,19 @@ const Gallery = (props : {images : Array<string>}) => {
     >
       {props.images.map((image, index) => (
         <div key={index}>
-          <img style={{maxHeight : "50vh"}} src={image} alt={'poto'} />
+          <img
+          onError={
+            (e : any) => {
+              // Make it try to load the image again
+              for (let i = 0; i < 3; i++) {
+                e.target.src = image;
+              }
+              // If it fails again, replace it with a placeholder
+              e.target.onerror = null;
+              e.target.src = `./assets/${props.placeholder}.jpg`;
+            }
+          }
+          src={image} alt={'poto'} />
         </div>
       ))}
     </Masonry>
