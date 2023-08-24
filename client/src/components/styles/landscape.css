@@ -36,25 +36,6 @@
   filter: drop-shadow(-15px 15px 10px rgba(0, 0, 0, 0.4));
 }
 
-#landscape-text {
-  width: 20%;
-  position: relative;
-  align-self: flex-end;
-}
-
-#landscape-text>p {
-  font-size: 1.25em;
-  text-align: right;
-  font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: .1em;
-  font-weight: 500;
-  margin-right: 30px;
-  margin-top: 30px;
-  position: absolute;
-  top: 170px;
-  left: -20px;
-}
-
 
 @media screen and (max-width: 768px) {
   #sofa-landscape {
@@ -62,9 +43,5 @@
     height: clamp(200px, 40vw, 300px);
     right: clamp(0px, 2vw, 50px);
     bottom: -7vh;
-  }
-
-  #landscape-text>p {
-    top: -20px;
   }
 }

@@ -7,7 +7,7 @@ const Gallery = (props : {images : Array<string>}) => {
     default: 3,
     1100: 3,
     700: 2,
-    500: 1,
+    500: 2,
   };
 
   return (

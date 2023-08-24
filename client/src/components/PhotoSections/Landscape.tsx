@@ -21,15 +21,6 @@ export default function Landscape() {
     "https://drive.google.com/uc?id=1kcl71K22NP-kPflZafF5KC8NDjfssc6J"
   ]
 
-  const pick = () => {
-    let five = []
-    for (let i = 0; i < 9; i++) {
-      five.push(PicturePool[Math.floor(Math.random() * PicturePool.length)])
-      PicturePool.splice(PicturePool.indexOf(five[i]), 1)
-    }
-    return five
-  }
-
   return (
     <div id="landscape">
       <div>
@@ -38,10 +29,7 @@ export default function Landscape() {
         </span>
       </div>
       <div id="renders-landscape">
-        <div className="gallery-landscape">
-          <Gallery images={pick()} />
-        </div>
-        <img id='sofa-landscape' src="./assets/sofa_3D.png" alt="" />
+        <Gallery images={PicturePool} />
       </div>
     </div>
   )

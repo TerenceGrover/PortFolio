@@ -2,6 +2,7 @@
   display: flex;
   padding: 50px 55px;
   margin-left: -5px;
+  height: 100%;
 }
 
 .my-masonry-grid_column {
