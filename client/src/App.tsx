@@ -86,6 +86,28 @@ function App() {
         <BackgroundDeco dark={dark} />
       </div>
       <BlurryCursor />
+      <span
+        style={{
+          position: 'fixed',
+          bottom: '0',
+          right: '0',
+          margin: '1rem',
+          fontSize: '0.8rem',
+        }}
+      >
+        Currently working for{' '}
+        <a
+          href="https://www.instudio.digital/"
+          target="_blank"
+          rel="noreferrer"
+          style={{
+            color: dark ? '#f0f0f0' : '#111111',
+            textDecoration: 'underline',
+          }}
+        >
+          inStudio
+        </a>
+      </span>
     </MobileContext.Provider>
   );
 }
